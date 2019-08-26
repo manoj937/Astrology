@@ -1,0 +1,26 @@
+.navbar-nav{
+    flex-direction: row;
+}
+
+.nav-item{
+    padding: 25px 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover, .active-link{
+    background: #c53e06;
+}
+
+.navbar-brand img{
+    width: 100px;
+    margin: 0 15px;
+}
+
+.container, nav{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand span:focus, .nav-item:focus, img:focus{
+    outline: none;
+}

@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -10,6 +12,7 @@ import { MarriagematchComponent } from './pages/marriagematch/marriagematch.comp
 import { LuckynamesComponent } from './pages/luckynames/luckynames.component';
 import { MantrasComponent } from './pages/mantras/mantras.component';
 import { HeaderComponent } from './tiles/header/header.component';
+import { FooterComponent } from './tiles/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,11 +32,14 @@ const appRoutes: Routes = [
     MarriagematchComponent,
     LuckynamesComponent,
     MantrasComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

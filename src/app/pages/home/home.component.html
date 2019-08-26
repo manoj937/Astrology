@@ -24,12 +24,12 @@
             <form style="padding: 1.25rem;">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input id="name" class="form-control" placeholder="Enter Name" type="text">
+                    <input id="name" class="form-control" placeholder="Enter Name" type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label style="margin-right: 10px">Gender</label>
                     <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
-                        <input type="radio" id="male" name="customRadio" class="custom-control-input">
+                        <input type="radio" id="male" name="customRadio" class="custom-control-input" >
                         <label class="custom-control-label" for="male">Male</label>
                     </div>
                     <div class="custom-control custom-radio" style="display: inline-block;">
@@ -39,49 +39,49 @@
                 </div>
                 <div class="form-group">
                     <label>Birthday</label>
-                    <input class="form-control" type="date">
+                    <input class="form-control" type="date" [(ngModel)]="birthDay" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label>Birth Time</label>
-                    <input class="form-control" type="time">
+                    <input class="form-control" type="time" [(ngModel)]="birthTime" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="place">Place Of Birth</label>
-                    <input id="place" class="form-control" placeholder="Enter Place of Birth" type="text">
+                    <input id="place" class="form-control" placeholder="Enter Place of Birth" type="text" [(ngModel)]="birthPlace" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input class="form-control" id="email" placeholder="name@example.com" type="email">
+                    <input class="form-control" id="email" placeholder="name@example.com" type="email" [(ngModel)]="emailAddress" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="mobile">Mobile Number</label>
-                    <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text">
+                    <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="rashi">Rashi</label>
-                    <input class="form-control" id="rashi" placeholder="Enter Rashi" type="text">
+                    <input class="form-control" id="rashi" placeholder="Enter Rashi" type="text" [(ngModel)]="rashi" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="nakshatram">Nakshatram(Birth Star)</label>
-                    <input id="nakshatram" class="form-control" placeholder="Enter Nakshatram" type="text">
+                    <input id="nakshatram" class="form-control" placeholder="Enter Nakshatram" type="text" [(ngModel)]="birthStar" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="maritalstatus" style="margin-right: 10px">Marital Status</label>
                     <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
-                        <input type="radio" id="single" name="customRadio" class="custom-control-input">
+                        <input type="radio" id="single" name="maritialStatus" class="custom-control-input">
                         <label class="custom-control-label" for="single">Single</label>
                     </div>
                     <div class="custom-control custom-radio" style="display: inline-block">
-                        <input type="radio" id="married" name="customRadio" class="custom-control-input">
+                        <input type="radio" id="married" name="maritialStatus" class="custom-control-input">
                         <label class="custom-control-label" for="married">Married</label>
                     </div>
                 </div>
                 <div  class="form-group">
                     <label for="sugg">Any Specific Questions</label>
-                    <textarea class="form-control" id="sugg" rows="3"></textarea>
+                    <textarea class="form-control" id="sugg" rows="3" [(ngModel)]="questions" [ngModelOptions]="{standalone: true}"></textarea>
                 </div>
                 <div class="form-group d-flex" style="justify-content: center;margin-top: 35px">
-                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Payment</button>
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="onSubmit()">Submit</button>
                 </div>  
             </form>
         </div>
