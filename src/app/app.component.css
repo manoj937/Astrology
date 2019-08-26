@@ -1,0 +1,50 @@
+.navbar-nav{
+    flex-direction: row;
+}
+
+.nav-item{
+    padding: 25px 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background: #c53e06;
+}
+
+a img{
+    width: 100px;
+    margin: 0 15px;
+}
+
+.container, nav{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.zodiac img{
+    width: 60px;
+}
+
+.zodiac{
+    background: #eee;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.zodiac .img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 500px;
+}
+
+.raasi{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+

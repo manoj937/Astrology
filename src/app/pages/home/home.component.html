@@ -1,0 +1,89 @@
+<div class="d-flex container">
+    <div style="width: 65%;">
+        <div class="card" style="margin: 20px 0;">
+            <div class="card-body" style="flex-direction:row;display: flex;align-items: center;">
+                <img src="assets/rishi.jpg" style="width: 40%;padding: 30px;">
+                <p style="padding: 20px;font-size: 16px;letter-spacing: 0.5px;">Astrology is a great science which predicts person's ups and downs in their life. One can safeguard himself from bad things by using astrology as a tool. It is just like making use of umbrella during rain. We provide the astrological prediction with zero degree accuracy.</p>
+            </div>
+        </div>
+        <div class="card" style="margin: 20px 0;">
+            <h2>CHECK YOUR MONTHLY HOROSCOPE</h2>
+            <div class="card-body" style="height: calc( 100vh + 25px);flex-direction:row;flex-wrap: wrap;display: flex;align-items: center; justify-content: space-between;">
+                <div *ngFor="let sign of signs" class="card zodiac">
+                    <div class="card-body">
+                        <span class="img"><img src="assets/{{sign.image}}.png"></span>
+                        <span class="raasi">{{sign.raasi}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="margin: 20px 0px 20px 20px;width: calc(35% - 20px);">
+        <div class="card-body" style="padding: 0">
+            <h2>YOUR HOROSCOPE</h2>
+            <form style="padding: 1.25rem;">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" class="form-control" placeholder="Enter Name" type="text">
+                </div>
+                <div class="form-group">
+                    <label style="margin-right: 10px">Gender</label>
+                    <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
+                        <input type="radio" id="male" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio" style="display: inline-block;">
+                        <input type="radio" id="female" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Birthday</label>
+                    <input class="form-control" type="date">
+                </div>
+                <div class="form-group">
+                    <label>Birth Time</label>
+                    <input class="form-control" type="time">
+                </div>
+                <div class="form-group">
+                    <label for="place">Place Of Birth</label>
+                    <input id="place" class="form-control" placeholder="Enter Place of Birth" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input class="form-control" id="email" placeholder="name@example.com" type="email">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="rashi">Rashi</label>
+                    <input class="form-control" id="rashi" placeholder="Enter Rashi" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="nakshatram">Nakshatram(Birth Star)</label>
+                    <input id="nakshatram" class="form-control" placeholder="Enter Nakshatram" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="maritalstatus" style="margin-right: 10px">Marital Status</label>
+                    <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
+                        <input type="radio" id="single" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="single">Single</label>
+                    </div>
+                    <div class="custom-control custom-radio" style="display: inline-block">
+                        <input type="radio" id="married" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="married">Married</label>
+                    </div>
+                </div>
+                <div  class="form-group">
+                    <label for="sugg">Any Specific Questions</label>
+                    <textarea class="form-control" id="sugg" rows="3"></textarea>
+                </div>
+                <div class="form-group d-flex" style="justify-content: center;margin-top: 35px">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Payment</button>
+                </div>  
+            </form>
+        </div>
+        </div>
+    </div>

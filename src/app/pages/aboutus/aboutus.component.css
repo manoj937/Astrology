@@ -1,0 +1,15 @@
+.card{
+    margin: 20px 0;
+}
+
+.card-body{
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    padding: 20px 50px;
+    height: calc( 100vh - 140px);
+    list-style-type: none;
+}
+
+.card-body li{
+    margin-top: 15px;
+}
