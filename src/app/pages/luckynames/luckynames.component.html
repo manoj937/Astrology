@@ -1,6 +1,6 @@
 <div class="container">
     <div class="card" style="margin: 20px 0;">
-        <div class="card-body" style="flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px;">
+        <div class="card-body" style="flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px;min-height: calc( 100vh - 130px);">
             <table class="table">
                 <thead class="thead-light">
                   <tr>
@@ -16,8 +16,8 @@
                     <th scope="row">{{luckyname.id}}</th>
                     <td>{{luckyname.name}}</td>
                     <td>{{luckyname.meaning}}</td>
-                    <td class="text-center">23</td>
-                    <td class="text-center">24</td>
+                    <td class="text-center">{{luckyname.namenumber}}</td>
+                    <td class="text-center">{{luckyname.numerologynumber}}</td>
                   </tr>
                 </tbody>
               </table>
