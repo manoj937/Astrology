@@ -29,16 +29,18 @@ app.post('/sendEmail',function(req,res){
 	let questions = message['questions'];
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+	host: 'server190.iseencloud.com',
+	port: 465,
+    secure: true,
     auth: {
-        user: 'hameedirfan18@gmail.com',//// need to change client email
-        pass: cryptr.decrypt('6218f187cb8732bee35e11234a36310bdc7c0b349e576669c49a')// need to change client password
+        user: 'info@predicthoroscope.com',//// need to change client email
+        pass: cryptr.decrypt('f2d50800a6ddf3b2e1121273f830dac5eccd6908540974acced138fc31')// need to change client password
     }
 });
 
 var mailOptions = {
-    from: 'Darshini Astrology<hameedirfan18@gmail.com>',// need to change client email
-    to: "hameedirfan13@gmail.com",//// need to change client email
+    from: 'Darshini Astrology<info@predicthoroscope.com>',// need to change client email
+    to: "arskavi@gmail.com",//// need to change client email
     subject: "New Astro Request",
     html :`
     
