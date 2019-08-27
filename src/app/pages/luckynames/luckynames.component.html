@@ -1,7 +1,27 @@
 <div class="container">
     <div class="card" style="margin: 20px 0;">
-        <div class="card-body" style="flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px;height: calc( 100vh - 140px);">
-        LUCKYNAMES PAGE IS IN UNDER DEVELOPMENT
+        <div class="card-body" style="flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px;">
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Meaning</th>
+                    <th scope="col text-center">Name Number</th>
+                    <th scope="col text-center">Numerology Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let luckyname of luckyNames">
+                    <th scope="row">{{luckyname.id}}</th>
+                    <td>{{luckyname.name}}</td>
+                    <td>{{luckyname.meaning}}</td>
+                    <td class="text-center">23</td>
+                    <td class="text-center">24</td>
+                  </tr>
+                </tbody>
+              </table>
+              
         </div>
     </div>
 </div>    
