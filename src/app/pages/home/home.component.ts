@@ -83,7 +83,7 @@ export class HomeComponent implements OnInit {
     data['maritialStatus'] = this.maritialStatus;
     data['questions'] = this.questions;
 
-    return this.http.post(`http://localhost:49153/sendEmail`, data, {}).subscribe((response) => {
+    return this.http.post(`http://predicthoroscope.com:49153/sendEmail`, data, {}).subscribe((response) => {
       alert(response['Message']);
     })
   }
