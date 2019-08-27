@@ -67,9 +67,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
 
   onSubmit() {
-    console.log(`name...${this.name}....Gender...${this.gender}.....Birthday...${this.birthDay}
-                ${this.birthTime}.....${this.birthPlace}.....${this.birthStar}.....${this.emailAddress}.....
-                ${this.mobile}......${this.rashi}.......${this.maritialStatus}......${this.questions}`)
+    // console.log(`name...${this.name}....Gender...${this.gender}.....Birthday...${this.birthDay}
+    //             ${this.birthTime}.....${this.birthPlace}.....${this.birthStar}.....${this.emailAddress}.....
+    //             ${this.mobile}......${this.rashi}.......${this.maritialStatus}......${this.questions}`)
     let data = {};
     data['name'] = this.name;
     data['gender'] = this.gender;
@@ -83,7 +83,7 @@ export class HomeComponent implements OnInit {
     data['maritialStatus'] = this.maritialStatus;
     data['questions'] = this.questions;
 
-    return this.http.post(`http://localhost:8081/sendEmail`, data, {}).subscribe((response) => {
+    return this.http.post(`http://localhost:49153/sendEmail`, data, {}).subscribe((response) => {
       alert(response['Message']);
     })
   }
