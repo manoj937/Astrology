@@ -173,6 +173,10 @@ transporter.sendMail(mailOptions, function(error){
 
 });
 
+app.get('/test',function(req,res){
+	res.json({"status":"OK"})
+});
+
 
 // launch ======================================================================
 app.listen(port);
