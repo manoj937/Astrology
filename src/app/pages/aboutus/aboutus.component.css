@@ -5,9 +5,13 @@
 .card-body{
     line-height: 30px;
     letter-spacing: 0.5px;
-    padding: 20px 50px;
-    height: calc( 100vh - 204px);
+    padding: 17px 50px;
     list-style-type: none;
+}
+
+pre{
+    padding: 0 50px;
+    font-weight: bold;
 }
 
 .card-body li{

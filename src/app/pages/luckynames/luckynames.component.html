@@ -1,27 +1,40 @@
 <div class="container">
     <div class="card" style="margin: 20px 0;">
         <div class="card-body" style="flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px;min-height: calc( 100vh - 130px);">
-            <table class="table">
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Meaning</th>
-                    <th scope="col text-center">Name Number</th>
-                    <th scope="col text-center">Numerology Number</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let luckyname of luckyNames">
-                    <th scope="row">{{luckyname.id}}</th>
-                    <td>{{luckyname.name}}</td>
-                    <td>{{luckyname.meaning}}</td>
-                    <td class="text-center">{{luckyname.namenumber}}</td>
-                    <td class="text-center">{{luckyname.numerologynumber}}</td>
-                  </tr>
-                </tbody>
-              </table>
-              
+          <ul class="nav nav-pills mb-3 d-flex justify-content-center">
+            <li class="nav-item mr-3">
+              <a class="nav-link active" (click)="luckynames($event)">Boys</a>
+            </li>
+            <li class="nav-item ml-3">
+              <a class="nav-link" (click)="luckynames($event)">Girls</a>
+            </li>
+          </ul>
+          <div class="alpha">
+            <span *ngFor="let letter of alpha" (click)="sort($event)" class="sort">{{letter}}</span>
+          </div>
+          <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Meaning</th>
+                  <th scope="col">Name_Number</th>
+                  <th scope="col">Numerology_Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let luckyname of names">
+                  <th scope="row">{{luckyname.id}}</th>
+                  <td>{{luckyname.name}}</td>
+                  <td>{{luckyname.meaning}}</td>
+                  <td class="text-center">{{luckyname.namenumber}}</td>
+                  <td class="text-center">{{luckyname.numerologynumber}}</td>
+                </tr>
+              </tbody>
+            </table>  
+            <div *ngIf="isLoading" class="spinner-border" role="status" style="position: absolute;top: 50vh; left:50%">
+              <span class="sr-only">Loading...</span>
+            </div>  
         </div>
     </div>
 </div>    

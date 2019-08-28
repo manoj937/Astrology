@@ -1,0 +1,28 @@
+.nav-link, .sort{
+    cursor: pointer !important;
+}
+
+.sort{
+    width: 30px;
+    height: 30px;
+    border-radius: 500px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alpha{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.sort:hover{
+    color: #007bff;
+}
+
+.sort.active{
+    background: #007bff;
+    color: #fff;
+}
