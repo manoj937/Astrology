@@ -29,11 +29,11 @@
                 <div class="form-group">
                     <label style="margin-right: 10px">Gender</label>
                     <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
-                        <input type="radio" id="male" name="customRadio" class="custom-control-input" >
+                        <input type="radio" id="male" name="gender" class="custom-control-input" value = "Male" [(ngModel)]="gender">
                         <label class="custom-control-label" for="male">Male</label>
                     </div>
                     <div class="custom-control custom-radio" style="display: inline-block;">
-                        <input type="radio" id="female" name="customRadio" class="custom-control-input">
+                        <input type="radio" id="female" name="gender" class="custom-control-input" value = "Female" [(ngModel)]="gender">
                         <label class="custom-control-label" for="female">Female</label>
                     </div>
                 </div>
@@ -68,11 +68,11 @@
                 <div class="form-group">
                     <label for="maritalstatus" style="margin-right: 10px">Marital Status</label>
                     <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
-                        <input type="radio" id="single" name="maritialStatus" class="custom-control-input">
+                        <input type="radio" id="single" name="maritialStatus" class="custom-control-input" value = "Single" [(ngModel)]="maritialStatus"> 
                         <label class="custom-control-label" for="single">Single</label>
                     </div>
                     <div class="custom-control custom-radio" style="display: inline-block">
-                        <input type="radio" id="married" name="maritialStatus" class="custom-control-input">
+                        <input type="radio" id="married" name="maritialStatus" class="custom-control-input" value = "Married" [(ngModel)]="maritialStatus">
                         <label class="custom-control-label" for="married">Married</label>
                     </div>
                 </div>
