@@ -40,7 +40,7 @@ const transporter = nodemailer.createTransport({
 
 var mailOptions = {
     from: 'Darshini Astrology<info@predicthoroscope.com>',// need to change client email
-    to: "arskavi@gmail.com",//// need to change client email
+    to: "predicthoroscope@gmail.com",//// need to change client email
     subject: "New Astro Request",
     html :`
     
