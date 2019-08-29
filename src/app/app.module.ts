@@ -14,6 +14,8 @@ import { MantrasComponent } from './pages/mantras/mantras.component';
 import { HeaderComponent } from './tiles/header/header.component';
 import { FooterComponent } from './tiles/footer/footer.component';
 
+import { AmazingTimePickerModule } from 'amazing-time-picker';
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
@@ -39,7 +41,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AmazingTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

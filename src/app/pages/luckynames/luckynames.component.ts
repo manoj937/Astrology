@@ -20,6 +20,9 @@ export class LuckynamesComponent implements OnInit {
     for(let i=0; i<document.getElementsByClassName('nav-link').length;i++){
       document.getElementsByClassName('nav-link')[i].classList.remove('active');
     }
+    for(let i=0; i<document.getElementsByClassName('sort').length;i++){
+      document.getElementsByClassName('sort')[i].classList.remove('active');
+    }
     e.target.classList.add('active');
   }
 
@@ -30,16 +33,18 @@ export class LuckynamesComponent implements OnInit {
     for(let i=0; i<document.getElementsByClassName('sort').length;i++){
       document.getElementsByClassName('sort')[i].classList.remove('active');
     }
-    resultArr = this.commonIterate(sortNames[0].boys, firstLetter, resultArr);
-    resultArr = this.commonIterate(sortNames[1].girls, firstLetter, resultArr);
+    document.querySelectorAll('.nav-link.active')[0].innerHTML === 'Boys'?resultArr = this.commonIterate(sortNames[0].boys, firstLetter, resultArr):resultArr = this.commonIterate(sortNames[1].girls, firstLetter, resultArr);
     this.names = resultArr;
     e.target.classList.add('active');
   }
 
   commonIterate(sortNames, firstLetter, resultArr){
-    for(let name of sortNames){
-      if(name.name[0] == firstLetter.toLowerCase() || name.name[0] == firstLetter.toUpperCase()){
-        resultArr.push(name);
+    let m = 0;
+    for(let name in sortNames){
+      if(sortNames[name].name[0] == firstLetter.toLowerCase() || sortNames[name].name[0] == firstLetter.toUpperCase()){
+        m++;
+        sortNames[name].id = m;
+        resultArr.push(sortNames[name]);
       }
     }
     return resultArr;

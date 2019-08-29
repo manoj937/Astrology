@@ -5,7 +5,8 @@ import {
 import {
   HttpClient
 } from '@angular/common/http';
-import {Router} from "@angular/router"
+import {Router} from "@angular/router";
+import { AmazingTimePickerService } from 'amazing-time-picker';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit {
   name: any;
   gender: any;
   birthDay: any;
-  birthTime: any;
+  birthTime: any ="10.00";
   birthPlace: any;
   emailAddress: any;
   mobile: any;
@@ -25,7 +26,14 @@ export class HomeComponent implements OnInit {
   maritialStatus: any;
   questions: any;
 
-  constructor(private http: HttpClient,private router: Router) {}
+  constructor(private http: HttpClient,private atp: AmazingTimePickerService) {}
+
+  open() {
+    const amazingTimePicker = this.atp.open();
+    amazingTimePicker.afterClose().subscribe(time => {
+      (<HTMLInputElement>document.getElementById('time')).value = time;
+    });
+  }
 
   public signs = [{
     "image": "aries",
@@ -93,8 +101,12 @@ export class HomeComponent implements OnInit {
           userData : data
     }
 
-    return this.http.post(`http://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
-    })
+    if(data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['birthStar'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']){
+      return this.http.post(`http://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
+      })
+    }else{
+      alert("FILL ALL DETAILS");
+    }
   }
 
 }

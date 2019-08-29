@@ -43,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <label>Birth Time</label>
-                    <input class="form-control" type="time" [(ngModel)]="birthTime" [ngModelOptions]="{standalone: true}">
+                    <input id="time" class="form-control" [(ngModel)]="birthTime" [ngModelOptions]="{standalone: true}" (click)="open()">
                 </div>
                 <div class="form-group">
                     <label for="place">Place Of Birth</label>
