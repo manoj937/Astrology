@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   maritialStatus: any;
   questions: any;
 
-  constructor(private http: HttpClient,private atp: AmazingTimePickerService) {}
+  constructor(private http: HttpClient,private atp: AmazingTimePickerService, private router: Router) {}
 
   open() {
     const amazingTimePicker = this.atp.open();
@@ -103,6 +103,11 @@ export class HomeComponent implements OnInit {
 
     if(data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['birthStar'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']){
       return this.http.post(`http://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
+        if(response.query.payment_status == "Credit"){
+          this.router.navigateByUrl('/success');
+        }else{
+          this.router.navigateByUrl('/failure');
+        }
       })
     }else{
       alert("FILL ALL DETAILS");

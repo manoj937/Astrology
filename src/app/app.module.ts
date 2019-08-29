@@ -15,6 +15,8 @@ import { HeaderComponent } from './tiles/header/header.component';
 import { FooterComponent } from './tiles/footer/footer.component';
 
 import { AmazingTimePickerModule } from 'amazing-time-picker';
+import { SuccessComponent } from './pages/success/success.component';
+import { FailureComponent } from './pages/failure/failure.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,7 +25,9 @@ const appRoutes: Routes = [
   { path: 'numerology', component: NumerologyComponent },
   { path: 'marriagematch', component: MarriagematchComponent },
   { path: 'luckynames', component: LuckynamesComponent },
-  { path: 'mantras', component: MantrasComponent }
+  { path: 'mantras', component: MantrasComponent },
+  { path: 'success', component: SuccessComponent },
+  { path: 'failure', component: FailureComponent }
 ];
 @NgModule({
   declarations: [
@@ -35,7 +39,9 @@ const appRoutes: Routes = [
     LuckynamesComponent,
     MantrasComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SuccessComponent,
+    FailureComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
