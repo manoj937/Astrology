@@ -5,6 +5,7 @@ import {
 import {
   HttpClient
 } from '@angular/common/http';
+import {Router} from "@angular/router"
 
 @Component({
   selector: 'app-home',
@@ -24,7 +25,7 @@ export class HomeComponent implements OnInit {
   maritialStatus: any;
   questions: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,private router: Router) {}
 
   public signs = [{
     "image": "aries",
@@ -67,9 +68,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
 
   onSubmit() {
-    // console.log(`name...${this.name}....Gender...${this.gender}.....Birthday...${this.birthDay}
-    //             ${this.birthTime}.....${this.birthPlace}.....${this.birthStar}.....${this.emailAddress}.....
-    //             ${this.mobile}......${this.rashi}.......${this.maritialStatus}......${this.questions}`)
+
     let data = {};
     data['name'] = this.name;
     data['gender'] = this.gender;
@@ -83,8 +82,18 @@ export class HomeComponent implements OnInit {
     data['maritialStatus'] = this.maritialStatus;
     data['questions'] = this.questions;
 
-    return this.http.post(`http://emailserverapp.herokuapp.com/sendEmail`, data, {}).subscribe((response) => {
-      alert(response['Message']);
+    const paymentData = {
+          purpose : 'Astro Payment',
+          amount: '10',
+          buyer_name: this.name,
+          email: this.emailAddress,
+          phone: this.mobile,
+          redirect_url : `http://emailserverapp.herokuapp.com/callback`,
+          webhook_url: '/webhook/',
+          userData : data
+    }
+
+    return this.http.post(`http://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
     })
   }
 
