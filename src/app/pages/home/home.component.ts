@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
 
     const paymentData = {
           purpose : 'Astro Payment',
-          amount: '10',
+          amount: '500',
           buyer_name: this.name,
           email: this.emailAddress,
           phone: this.mobile,
