@@ -18,6 +18,9 @@ import { AmazingTimePickerModule } from 'amazing-time-picker';
 import { SuccessComponent } from './pages/success/success.component';
 import { FailureComponent } from './pages/failure/failure.component';
 
+// For MDB Angular Free
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
@@ -48,7 +51,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AmazingTimePickerModule
+    AmazingTimePickerModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

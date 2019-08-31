@@ -1,0 +1,21 @@
+.container{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 103px;
+    min-height: calc( 100vh - 159px); 
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        margin-top: 80px;
+        font-size: 14px;
+    }
+
+    .card{
+        margin-bottom: 70px;
+    }
+
+    .card-body{
+        padding: 10px 20px !important;
+    }
+}

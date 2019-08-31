@@ -1,10 +1,21 @@
+.container{
+    flex-wrap: initial;
+}
 .navbar-nav{
     flex-direction: row;
 }
 
 .nav-item{
-    padding: 25px 10px;
+    padding: 20px 10px;
     cursor: pointer;
+}
+
+.title, .titlehide{
+    font-size: 21px;
+}
+
+.titlehide{
+    display: none;
 }
 
 .nav-item:hover, .active-link{
@@ -27,4 +38,70 @@ li a{
 
 .navbar-brand span:focus, .nav-item:focus, img:focus{
     outline: none;
+}
+
+.collapse{
+    justify-content: flex-end;
+}
+
+.navbar-toggler, li i{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+    .menulist{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+        color: #fff;
+    }
+
+    li i{
+        display: inline-block;
+        margin-right: 10px; 
+    }
+
+    .menulist{
+        width: 100%;
+    }
+
+    .navbar-brand img{
+        width: 55px;
+    }
+
+    .navbar-nav{
+        flex-direction: column;
+        width: 100%;
+        height: calc( 100vh - 65px);
+    }
+
+    .titlehide{
+        display: inline-block !important;
+        font-size: 16px;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .navbar-toggler{
+        display: inline-block;
+        padding: 3px;
+    }
 }

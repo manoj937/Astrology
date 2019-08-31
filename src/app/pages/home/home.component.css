@@ -1,6 +1,7 @@
 .container{
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: 78px; 
 }
 
 .zodiac img{
@@ -37,3 +38,107 @@ h2{
     text-align: center;
 }
 
+.homecontainer{
+    width: 65%;
+}
+
+.homecontainer .card{
+    margin: 20px 5px;
+}
+
+.rishicontainer{
+    flex-direction:row;
+    display: flex;
+    align-items: center;
+}
+
+.rishicontainer img{
+    width: 40%;
+    padding: 30px;
+}
+
+.rishicontainer p{
+    padding: 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.rishicontent{
+    height: calc( 100vh + 25px);
+    flex-direction:row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.horoscope{
+    margin: 20px 0px 20px 20px;
+    width: calc(35% - 20px);
+}
+
+.horoscope .card-body{
+    padding: 0;
+}
+
+.horoscope form{
+    padding: 1.25rem;
+}
+
+.gender{
+    margin-right: 10px;
+}
+
+.genderselect{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.genderfemale{
+    display: inline-block;
+}
+
+.buttonpay{
+    justify-content: center;
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-wrap: wrap;
+        margin-bottom: 65px;
+        margin-top: 65px;
+    }
+
+    .homecontainer{
+        width: 100%;
+    }
+
+    .rishicontainer{
+        flex-direction: column;
+    }
+
+    .rishicontainer p{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .rishicontainer img{
+        width: 100%;
+    }
+
+    .rishicontent{
+        height: auto;
+        justify-content: center;
+    }
+
+    h2, form{
+        font-size: 14px;
+    }
+
+    .horoscope{
+        width: 100%;
+        margin: 0;  
+    }
+    
+}

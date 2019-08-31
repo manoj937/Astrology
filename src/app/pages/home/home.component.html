@@ -1,14 +1,14 @@
 <div class="d-flex container">
-    <div style="width: 65%;">
-        <div class="card" style="margin: 20px 0;">
-            <div class="card-body" style="flex-direction:row;display: flex;align-items: center;">
-                <img src="assets/rishi.jpg" style="width: 40%;padding: 30px;">
-                <p style="padding: 20px;font-size: 16px;letter-spacing: 0.5px;">Astrology is a great science which predicts person's ups and downs in their life. One can safeguard himself from bad things by using astrology as a tool. It is just like making use of umbrella during rain. We provide the astrological prediction with zero degree accuracy.</p>
+    <div class="homecontainer">
+        <div class="card">
+            <div class="card-body rishicontainer">
+                <img src="assets/rishi.jpg">
+                <p>Astrology is a great science which predicts person's ups and downs in their life. One can safeguard himself from bad things by using astrology as a tool. It is just like making use of umbrella during rain. We provide the astrological prediction with zero degree accuracy.</p>
             </div>
         </div>
-        <div class="card" style="margin: 20px 0;">
+        <div class="card">
             <h2>CHECK YOUR MONTHLY HOROSCOPE</h2>
-            <div class="card-body" style="height: calc( 100vh + 25px);flex-direction:row;flex-wrap: wrap;display: flex;align-items: center; justify-content: space-between;">
+            <div class="card-body rishicontent">
                 <div *ngFor="let sign of signs" class="card zodiac">
                     <div class="card-body">
                         <span class="img"><img src="assets/{{sign.image}}.png"></span>
@@ -18,43 +18,50 @@
             </div>
         </div>
     </div>
-    <div class="card" style="margin: 20px 0px 20px 20px;width: calc(35% - 20px);">
-        <div class="card-body" style="padding: 0">
+    <div class="card horoscope">
+        <div class="card-body">
             <h2>YOUR HOROSCOPE</h2>
-            <form style="padding: 1.25rem;">
+            <form>
                 <div class="form-group">
                     <label for="name">Name</label>
+                    <span style="color: red;margin-left: 5px">*</span>
                     <input id="name" class="form-control" placeholder="Enter Name" type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
-                    <label style="margin-right: 10px">Gender</label>
-                    <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
+                    <label class="gender">Gender</label>
+                    <span style="color: red;margin-right: 10px">*</span>
+                    <div class="custom-control custom-radio genderselect">
                         <input type="radio" id="male" name="gender" class="custom-control-input" value = "Male" [(ngModel)]="gender">
                         <label class="custom-control-label" for="male">Male</label>
                     </div>
-                    <div class="custom-control custom-radio" style="display: inline-block;">
+                    <div class="custom-control custom-radio genderfemale">
                         <input type="radio" id="female" name="gender" class="custom-control-input" value = "Female" [(ngModel)]="gender">
                         <label class="custom-control-label" for="female">Female</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Birthday</label>
+                    <span style="color: red;margin-left: 5px">*</span>
                     <input class="form-control" type="date" [(ngModel)]="birthDay" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label>Birth Time</label>
+                    <span style="color: red;margin-left: 5px">*</span>
                     <input id="time" class="form-control" [(ngModel)]="birthTime" [ngModelOptions]="{standalone: true}" (click)="open()">
                 </div>
                 <div class="form-group">
                     <label for="place">Place Of Birth</label>
+                    <span style="color: red;margin-left: 5px">*</span>
                     <input id="place" class="form-control" placeholder="Enter Place of Birth" type="text" [(ngModel)]="birthPlace" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
+                    <span style="color: red;margin-left: 5px">*</span>
                     <input class="form-control" id="email" placeholder="name@example.com" type="email" [(ngModel)]="emailAddress" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
                     <label for="mobile">Mobile Number</label>
+                    <span style="color: red;margin-left: 5px">*</span>
                     <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
@@ -63,15 +70,16 @@
                 </div>
                 <div class="form-group">
                     <label for="nakshatram">Nakshatram(Birth Star)</label>
-                    <input id="nakshatram" class="form-control" placeholder="Enter Nakshatram" type="text" [(ngModel)]="birthStar" [ngModelOptions]="{standalone: true}">
+                    <input id="nakshatram" class="form-control" placeholder="Enter Nakshatram(Birth Star)" type="text" [(ngModel)]="birthStar" [ngModelOptions]="{standalone: true}">
                 </div>
                 <div class="form-group">
-                    <label for="maritalstatus" style="margin-right: 10px">Marital Status</label>
-                    <div class="custom-control custom-radio" style="display: inline-block;margin-right: 10px">
+                    <label for="maritalstatus" class="gender">Marital Status</label>
+                    <span style="color: red;margin-right: 10px">*</span>
+                    <div class="custom-control custom-radio genderselect">
                         <input type="radio" id="single" name="maritialStatus" class="custom-control-input" value = "Single" [(ngModel)]="maritialStatus"> 
                         <label class="custom-control-label" for="single">Single</label>
                     </div>
-                    <div class="custom-control custom-radio" style="display: inline-block">
+                    <div class="custom-control custom-radio genderfemale">
                         <input type="radio" id="married" name="maritialStatus" class="custom-control-input" value = "Married" [(ngModel)]="maritialStatus">
                         <label class="custom-control-label" for="married">Married</label>
                     </div>
@@ -80,7 +88,7 @@
                     <label for="sugg">Any Specific Questions</label>
                     <textarea class="form-control" id="sugg" rows="3" [(ngModel)]="questions" [ngModelOptions]="{standalone: true}"></textarea>
                 </div>
-                <div class="form-group d-flex" style="justify-content: center;margin-top: 35px">
+                <div class="form-group d-flex buttonpay">
                     <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="onSubmit()">Pay Rs.500</button>
                 </div>  
             </form>

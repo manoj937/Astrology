@@ -73,9 +73,21 @@ export class HomeComponent implements OnInit {
     "raasi": "மீனம்"
   }]
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   onSubmit() {
+
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
 
     let data = {};
     data['name'] = this.name;
@@ -101,13 +113,8 @@ export class HomeComponent implements OnInit {
           userData : data
     }
 
-    if(data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['birthStar'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']){
+    if(data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']){
       return this.http.post(`https://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
-        // if(response.query.payment_status == "Credit"){
-        //   this.router.navigateByUrl('/success');
-        // }else{
-        //   this.router.navigateByUrl('/failure');
-        // }
       })
     }else{
       alert("FILL ALL DETAILS");

@@ -1,3 +1,10 @@
+.container{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 103px;
+    min-height: calc( 100vh - 159px); 
+}
+
 .nav-link, .sort{
     cursor: pointer !important;
 }
@@ -25,4 +32,23 @@
 .sort.active{
     background: #007bff;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .alpha{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        margin-top: 80px;
+        font-size: 16px;
+    }
+
+    .card{
+        margin-bottom: 70px;
+    }
+
+    .card-body{
+        padding: 10px 20px !important;
+    }
 }
