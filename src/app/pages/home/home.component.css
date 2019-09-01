@@ -103,11 +103,24 @@ h2{
     margin-top: 35px;
 }
 
+.back{
+    display: inline-block;
+    top: 22px;
+    left: 22px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
     .container{
         flex-wrap: wrap;
         margin-bottom: 65px;
         margin-top: 65px;
+    }
+
+    .time-picker-wrapper{
+        z-index: 9999;
+        top: -75px;
     }
 
     .homecontainer{
