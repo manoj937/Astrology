@@ -95,6 +95,7 @@ app.get('/callback', function (req, res) {
     let payment_status = responseData.payment_status;
     let user_id = responseData.user_id;
 
+    if(payment_status === 'Credit'){
     Promise.using(db(), function (connection) {
       let userDataQuery = `select * from userDetails where id = ${user_id}`;
       connection.query(userDataQuery).then((selectedData) => {
@@ -110,6 +111,10 @@ app.get('/callback', function (req, res) {
         console.log("call back error....", err)
       })
     });
+  }else{
+    console.log("Payment Failed");
+    return res.redirect("https://predicthoroscope.com/failure");
+  }
 
   }
 })
