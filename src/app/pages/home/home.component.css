@@ -118,11 +118,6 @@ h2{
         margin-top: 65px;
     }
 
-    .time-picker-wrapper{
-        z-index: 9999;
-        top: -75px;
-    }
-
     .homecontainer{
         width: 100%;
     }

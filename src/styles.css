@@ -5,3 +5,10 @@
 body{
     background: #E5DFCC;
 }
+
+@media only screen and (max-width: 800px) {
+    #time-picker-wrapper{
+        z-index: 9999 !important;
+        top: -75px !important;
+    }
+}
