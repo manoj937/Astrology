@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LuckynamesService } from '../../luckynames.service'
+import { commonService } from '../../common.service';
 
 @Component({
   selector: 'app-luckynames',
@@ -8,7 +8,7 @@ import { LuckynamesService } from '../../luckynames.service'
 })
 export class LuckynamesComponent implements OnInit {
 
-  constructor(public luckyName: LuckynamesService) { }
+  constructor(public luckyName: commonService) { }
 
   public luckyNames;
   public isLoading = true;
@@ -51,7 +51,7 @@ export class LuckynamesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.luckyName.getConfig().subscribe(data => {
+    this.luckyName.getConfig('assets/luckynames.json').subscribe(data => {
       this.luckyNames = data;
       this.names = this.luckyNames[0].boys;
       this.isLoading = false;

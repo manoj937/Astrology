@@ -7,6 +7,7 @@ import {
 } from '@angular/common/http';
 import {Router} from "@angular/router";
 import { AmazingTimePickerService } from 'amazing-time-picker';
+import { commonService } from '../../common.service';
 
 @Component({
   selector: 'app-home',
@@ -26,7 +27,10 @@ export class HomeComponent implements OnInit {
   maritialStatus: any;
   questions: any;
 
-  constructor(private http: HttpClient,private atp: AmazingTimePickerService, private router: Router) {}
+  raasipl: boolean = true;
+  public plan={};
+
+  constructor(private http: HttpClient,private atp: AmazingTimePickerService, private router: Router, public sign: commonService) {}
 
   open() {
     const amazingTimePicker = this.atp.open();
@@ -35,45 +39,25 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  public signs = [{
-    "image": "aries",
-    "raasi": "மேஷம்"
-  }, {
-    "image": "taurus",
-    "raasi": "ரிஷபம்"
-  }, {
-    "image": "gemini",
-    "raasi": "மிதுனம்"
-  }, {
-    "image": "cancer",
-    "raasi": "கடகம்"
-  }, {
-    "image": "leo",
-    "raasi": "சிம்மம்"
-  }, {
-    "image": "virgo",
-    "raasi": "கன்னி"
-  }, {
-    "image": "libra",
-    "raasi": "துலாம்"
-  }, {
-    "image": "scorpio",
-    "raasi": "விருச்சிகம்"
-  }, {
-    "image": "sagittarius",
-    "raasi": "தனுசு"
-  }, {
-    "image": "capricorn",
-    "raasi": "மகரம்"
-  }, {
-    "image": "aquarius",
-    "raasi": "கும்பம்"
-  }, {
-    "image": "pisces",
-    "raasi": "மீனம்"
-  }]
+  public signs;
 
   ngOnInit() {
+    this.sign.getConfig('assets/monthlyhoroscope.json').subscribe(data => {
+      this.signs = data;
+    });
+  }
+
+  back(){
+    this.raasipl = true;
+  }
+
+  raasiplan(raasi){
+    this.raasipl = false;
+    for(let sign of this.signs){
+      if(raasi === sign.image){
+        this.plan = sign;
+      }
+    }
   }
 
   onSubmit() {

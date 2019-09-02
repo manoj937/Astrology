@@ -4,14 +4,12 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class LuckynamesService {
+export class commonService {
 
   constructor(private http: HttpClient) { }
 
-  luckyNames = 'assets/data.json';
-
-  getConfig() {
-    return this.http.get(this.luckyNames);
+  getConfig(luckyNames) {
+    return this.http.get(luckyNames);
   }
 
 }

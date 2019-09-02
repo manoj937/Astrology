@@ -6,15 +6,29 @@
                 <p>Astrology is a great science which predicts person's ups and downs in their life. One can safeguard himself from bad things by using astrology as a tool. It is just like making use of umbrella during rain. We provide the astrological prediction with zero degree accuracy.</p>
             </div>
         </div>
-        <div class="card">
+        <div class="card horoscopecontent">
             <h2>CHECK YOUR MONTHLY HOROSCOPE</h2>
             <div class="card-body rishicontent">
-                <div *ngFor="let sign of signs" class="card zodiac">
-                    <div class="card-body">
-                        <span class="img"><img src="assets/{{sign.image}}.png"></span>
-                        <span class="raasi">{{sign.raasi}}</span>
+                <ng-container *ngIf="raasipl">
+                    <div *ngFor="let sign of signs" class="card zodiac {{sign.image}}" (click)="raasiplan(sign.image)">
+                        <div class="card-body">
+                            <span class="img"><img src="assets/{{sign.image}}.png"></span>
+                            <span class="raasi">{{sign.raasi}}</span>
+                        </div>
                     </div>
-                </div>
+                </ng-container>
+                <ng-container *ngIf="!raasipl">
+                    <i class="fa fa-arrow-left position-absolute back" (click)="back()"></i>
+                    <div class="d-flex justify-content-center" style="width: 100%">
+                        <div class="card zodiac">
+                            <div class="card-body">
+                                <span class="img"><img src="assets/{{plan.image}}.png"></span>
+                                <span class="raasi">{{plan.raasi}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngFor="let para of plan.raasiplan">{{para}}</div>
+                </ng-container>
             </div>
         </div>
     </div>
