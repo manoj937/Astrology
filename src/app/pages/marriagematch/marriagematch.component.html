@@ -1,7 +1,165 @@
 <div class="container">
-    <div class="card">
-        <div class="card-body" style="min-height: calc( 100vh - 185px);flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px">
-            <span>MARRIAGE MATCH MAKING PAGE IS IN UNDER DEVELOPMENT</span>
+    <div class="card" style="margin-bottom: 20px">
+        <div class="card-body" style="align-items: center;min-height: calc( 100vh - 185px);flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px">
+            <div style="margin-bottom: 15px;position: relative;display: flex; justify-content: center; width: 100%;height: 155px;" >
+                <h2 style="font-size: 16px;font-weight: bold;">மணப்பொருத்தம்</h2>
+                <img src="assets/twed.png" style="width: 15%;position: absolute;transform: scaleX(-1);top: 25px">
+            </div>
+            <div class="d-flex" style="width: 100%;flex-wrap: wrap">
+                <div class="card horoscope" style="flex-grow: 1;margin-right: 35px;">
+                    <div class="card-body">
+                        <h2 class="groombride">மணமகள்</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">பெயர் </label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input id="name" class="form-control" placeholder="பெயர்" type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+                            </div>
+                            <div class="form-group">
+                                <label>பிறந்த தேதி</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input class="form-control" type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>நேரம்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input id="time" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="place">பிறந்த ஊர்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input id="place" class="form-control" placeholder="பிறந்த ஊர்" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="nakshatram">நட்சத்திரம்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <select id="nakshatram" class="custom-select" (change)="reset()">
+                                    <option *ngFor="let bride of bridestar" value="{{bride}}">{{bride}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rashi">ராசி</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <select id="rashi" class="custom-select" (change)="reset()">
+                                    <option *ngFor="let raashi of brideraashi" value="{{raashi}}">{{raashi}}</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card horoscope" style="flex-grow: 1;margin-right: 15px;">
+                    <div class="card-body">
+                        <h2 class="groombride">மணமகன் </h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="mname">பெயர் </label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input id="mname" class="form-control" placeholder="பெயர்" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>பிறந்த தேதி</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input class="form-control" type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>நேரம்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input id="mtime" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="mplace">பிறந்த ஊர்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <input id="mplace" class="form-control" placeholder="பிறந்த ஊர்" type="text">
+                            </div>
+                            <div class="form-group" style="position: relative;">
+                                <label for="mnakshatram">நட்சத்திரம்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="mnakshatram" class="custom-select" (change)="groomNatchatram($event)">
+                                    <option *ngFor="let groom of groomstar" value="{{groom}}">{{groom}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="position: relative;">
+                                <label for="mrashi">ராசி</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="mrashi" class="custom-select" (change)="groomRashi($event)">
+                                    <option *ngFor="let groom of groomraashi" value="{{groom}}">{{groom}}</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div style="width: 100%;display: flex;justify-content: center;margin-top:20px;">
+                    <button style="font-size: 18px" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="onSubmit()">Result</button>
+                </div>
+                <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
+                    <form style="width: 100%; display: flex;justify-content: space-around;padding: 10px;flex-wrap: wrap">
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">தினம்</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">கணம்</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">மஹேந்திரம்</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">ஸ்திரீதீர்க்கம்</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">யோனி</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">ராசி</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">ராசி அதிபதி</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">வசியம்</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">ரஜ்ஜு</label>
+                        </div>
+                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">வேதை</label>
+                        </div>
+                    </form>
+                </div>
+                <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
+                    <span class="badge badge-pill badge-primary" style="padding: 10px">மொத்த பொருத்தங்கள் 08/10</span>
+                </div>
+                <div style="width: 100%;margin-top:20px">
+                    <div>நட்சத்திர பொருத்தங்கள் ஓர் அடிப்படை பொருத்தமே, இதுபோக திசா சந்திப்பு, சுத்த, அசுத்த ஜாதகங்கள் தோஷங்கள் போன்றவைகளின் ஆராய்வு மிக அவசியம்.</div> 
+                    <div>இதனை அறிந்துகொண்டு துல்லியமான பலன்களை பெற கீழ் உள்ள விவரங்களை பூர்த்தி செய்து payment பட்டனை அழுத்தவும்</div>
+                </div>
+                <div style="width: 100%;margin-top:20px; display: flex;justify-content: center;">
+                    <div class="form-group mr-3" >
+                        <label for="email">Email address</label>
+                        <span style="color: red;margin-left: 5px">*</span>
+                        <input class="form-control" id="email" placeholder="name@example.com" type="email">
+                    </div>
+                    <div class="form-group ml-3">
+                        <label for="mobile">Mobile Number</label>
+                        <span style="color: red;margin-left: 5px">*</span>
+                        <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text">
+                    </div>
+                </div>
+                <div class="form-group d-flex buttonpay" style="width: 100%;display: flex;justify-content: center;margin-top:20px">
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="onSubmit()">Pay Rs.500</button>
+                </div> 
+            </div>
         </div>
     </div>
 </div>    

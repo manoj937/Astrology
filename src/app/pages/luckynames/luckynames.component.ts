@@ -12,7 +12,7 @@ export class LuckynamesComponent implements OnInit {
 
   public luckyNames;
   public isLoading = true;
-  public alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  public alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   public names;
 
   luckynames(e){

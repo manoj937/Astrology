@@ -5,6 +5,18 @@
     min-height: calc( 100vh - 159px); 
 }
 
+.groombride{
+    font-size: 16px;
+    color: #fff;
+    background: #f16213;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: 43%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
 @media only screen and (max-width: 800px) {
     .container{
         margin-top: 80px;
