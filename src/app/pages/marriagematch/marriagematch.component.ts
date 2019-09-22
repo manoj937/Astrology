@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AmazingTimePickerService } from 'amazing-time-picker';
 import { commonService } from '../../common.service';
+import {
+  HttpClient
+} from '@angular/common/http';
 @Component({
   selector: 'app-marriagematch',
   templateUrl: './marriagematch.component.html',
@@ -8,7 +11,7 @@ import { commonService } from '../../common.service';
 })
 export class MarriagematchComponent implements OnInit {
 
-  constructor(private atp: AmazingTimePickerService, public marriagematch: commonService) { }
+  constructor(private atp: AmazingTimePickerService, public marriagematch: commonService, private http: HttpClient) { }
   public groomstar = []; 
   public bridestar =[];
   public groomraashi = []; 
@@ -20,6 +23,20 @@ export class MarriagematchComponent implements OnInit {
   public final = "உத்தமம்";
   public finalClass = "success";
   public finalr;
+  bname: any;
+  bbirthDay: any;
+  bbirthTime: any = "10.00";
+  bbirthPlace: any;
+  bbirthStar: any;
+  brashi: any;
+  gname: any;
+  gbirthDay: any;
+  gbirthTime: any = "10.00";
+  gbirthPlace: any;
+  gbirthStar: any;
+  grashi: any;
+  emailAddress: any;
+  mobile: any;
 
   ngOnInit() {
     this.reset();
@@ -106,6 +123,46 @@ export class MarriagematchComponent implements OnInit {
       }else{
         this.finalClass = "danger";
       }
+    }
+  }
+
+  submit(){
+    (<HTMLFormElement>document.getElementById("bride")).submit();
+    (<HTMLFormElement>document.getElementById("groom")).submit();
+    let data = {};
+    data['bname'] = this.bname;
+    data['bbirthDay'] = this.bbirthDay;
+    data['bbirthTime'] = this.bbirthTime;
+    data['bbirthPlace'] = this.bbirthPlace;
+    data['bbirthStar'] = this.bbirthTime;
+    data['brashi'] = this.bbirthPlace;
+    data['gname'] = this.gname;
+    data['gbirthDay'] = this.gbirthDay;
+    data['gbirthTime'] = this.gbirthTime;
+    data['gbirthPlace'] = this.gbirthPlace;
+    data['gbirthStar'] = this.gbirthTime;
+    data['grashi'] = this.gbirthPlace;
+    data['emailAddress'] = this.emailAddress;
+    data['mobile'] = this.mobile;
+
+    console.log(data);
+    const paymentData = {
+      purpose : 'Astro Payment',
+      amount: '500',
+      email: this.emailAddress,
+      phone: this.mobile,
+      redirect_url : `https://emailserverapp.herokuapp.com/callback`,
+      webhook_url: '/webhook/',
+      userData : data
+    }
+
+    if(data['bname'] && data['bbirthDay'] && data['bbirthTime'] && data['bbirthPlace'] && data['bbirthStar'] && data['brashi'] && data['emailAddress']
+  && data['gname'] && data['gbirthDay'] && data['gbirthTime'] && data['gbirthPlace'] && data['gbirthStar'] && data['grashi'] && data['mobile']){
+      return this.http.post(`https://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
+        window.location.href = response.toString();
+      })
+    }else{
+      alert("FILL ALL DETAILS");
     }
   }
 }
