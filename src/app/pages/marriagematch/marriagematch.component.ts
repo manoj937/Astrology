@@ -14,6 +14,12 @@ export class MarriagematchComponent implements OnInit {
   public groomraashi = []; 
   public brideraashi =[];
   public marrigedata;
+  public match = 0;
+  public matchResult;
+  public matchresults;
+  public final = "உத்தமம்";
+  public finalClass = "success";
+  public finalr;
 
   ngOnInit() {
     this.reset();
@@ -22,6 +28,7 @@ export class MarriagematchComponent implements OnInit {
   reset(){
     this.marriagematch.getConfig('assets/marriagematch.json').subscribe(data => {
       this.marrigedata = data;
+      this.matchresults = data[0].matches;
       for(let bride of data[1]){
         this.bridestar.push(bride.natchathiram);
         this.brideraashi.push(bride.raashi);
@@ -36,7 +43,7 @@ export class MarriagematchComponent implements OnInit {
       this.groomraashi = [...new Set(this.groomraashi)];
     });
   }
-  
+
   groomNatchatram(element){
     this.groomraashi = [];
     let brideStar = (<HTMLSelectElement>document.getElementById('nakshatram')).value;
@@ -46,6 +53,8 @@ export class MarriagematchComponent implements OnInit {
         for(let match of groommatch.match){
           if(element.target.value === match.natchathiram){
             this.groomraashi.push(match.raashi);
+            this.matchResult = match.matches;
+            this.finalr = match.result;
           }
         }
       }
@@ -62,6 +71,8 @@ export class MarriagematchComponent implements OnInit {
         for(let match of groommatch.match){
           if(element.target.value === match.raashi){
             this.groomstar.push(match.natchathiram);
+            this.matchResult = match.matches;
+            this.finalr = match.result;
           }
         }
       }
@@ -69,10 +80,32 @@ export class MarriagematchComponent implements OnInit {
     this.groomstar = [...new Set(this.groomstar)];
   }
 
-  open() {
+  open(e) {
     const amazingTimePicker = this.atp.open();
     amazingTimePicker.afterClose().subscribe(time => {
-      (<HTMLInputElement>document.getElementById('time')).value = time;
+      e.target.value = time;
     });
+  }
+
+  result(){
+    if(this.match==undefined || this.matchResult ==undefined){
+      alert('Kindly choose raasi or natchatra again');
+    }else{
+      for(let i=0;i<10;i++){
+        (<HTMLInputElement>document.getElementsByClassName('switchbtn')[i]).checked = false;
+      }
+      this.match = this.matchResult.length;
+      for(let checkList of this.matchResult){
+        (<HTMLInputElement>document.getElementsByClassName('switchbtn')[checkList-1]).checked = true;
+      }
+      this.final = this.finalr;
+      if(this.final =="உத்தமம்"){
+        this.finalClass = "success";
+      }else if(this.final =="மத்திமம்"){
+        this.finalClass = "warning";
+      }else{
+        this.finalClass = "danger";
+      }
+    }
   }
 }

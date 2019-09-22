@@ -31,3 +31,7 @@
         padding: 10px 20px !important;
     }
 }
+
+.custom-switch .custom-control-label::before{
+    pointer-events: none;
+}

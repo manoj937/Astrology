@@ -13,7 +13,7 @@
                             <div class="form-group">
                                 <label for="name">பெயர் </label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <input id="name" class="form-control" placeholder="பெயர்" type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+                                <input id="name" class="form-control" placeholder="பெயர்" type="text" >
                             </div>
                             <div class="form-group">
                                 <label>பிறந்த தேதி</label>
@@ -23,7 +23,7 @@
                             <div class="form-group">
                                 <label>நேரம்</label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <input id="time" class="form-control">
+                                <input id="time" class="form-control" (click)="open($event)" value="10.00">
                             </div>
                             <div class="form-group">
                                 <label for="place">பிறந்த ஊர்</label>
@@ -64,7 +64,7 @@
                             <div class="form-group">
                                 <label>நேரம்</label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <input id="mtime" class="form-control">
+                                <input id="mtime" class="form-control" (click)="open($event)" value="10.00">
                             </div>
                             <div class="form-group">
                                 <label for="mplace">பிறந்த ஊர்</label>
@@ -91,54 +91,19 @@
                     </div>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px;">
-                    <button style="font-size: 18px" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="onSubmit()">Result</button>
+                    <button style="font-size: 18px" type="button" class="btn btn-primary" (click)="result()">Result</button>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <form style="width: 100%; display: flex;justify-content: space-around;padding: 10px;flex-wrap: wrap">
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">தினம்</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">கணம்</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">மஹேந்திரம்</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">ஸ்திரீதீர்க்கம்</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">யோனி</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">ராசி</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">ராசி அதிபதி</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">வசியம்</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">ரஜ்ஜு</label>
-                        </div>
-                        <div class="custom-control custom-switch" style="flex-basis: 20%;margin: 10px 0;">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">வேதை</label>
+                    <form class="matches" style="width: 100%; display: flex;justify-content: space-around;padding: 10px;flex-wrap: wrap">
+                        <div *ngFor="let switchButton of matchresults" class="custom-control custom-switch" style="pointer-events: none;flex-basis: 20%;margin: 10px 0;">
+                            <input type="checkbox" class="custom-control-input switchbtn" id="{{switchButton}}">
+                            <label class="custom-control-label" for="{{switchButton}}">{{switchButton}}</label>
                         </div>
                     </form>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <span class="badge badge-pill badge-primary" style="padding: 10px">மொத்த பொருத்தங்கள் 08/10</span>
+                    <span class="badge badge-pill badge-primary" style="padding: 10px">மொத்த பொருத்தங்கள் {{match}}/10</span>
+                    <span class="badge badge-pill badge-{{finalClass}}" style="padding: 10px;margin-left: 15px">{{final}}</span>
                 </div>
                 <div style="width: 100%;margin-top:20px">
                     <div>நட்சத்திர பொருத்தங்கள் ஓர் அடிப்படை பொருத்தமே, இதுபோக திசா சந்திப்பு, சுத்த, அசுத்த ஜாதகங்கள் தோஷங்கள் போன்றவைகளின் ஆராய்வு மிக அவசியம்.</div> 
@@ -157,7 +122,7 @@
                     </div>
                 </div>
                 <div class="form-group d-flex buttonpay" style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" (click)="onSubmit()">Pay Rs.500</button>
+                    <button type="button" class="btn btn-primary" data-toggle="button" >Pay Rs.500</button>
                 </div> 
             </div>
         </div>
