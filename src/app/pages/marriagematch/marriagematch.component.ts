@@ -25,13 +25,11 @@ export class MarriagematchComponent implements OnInit {
   public finalr;
   bname: any;
   bbirthDay: any;
-  bbirthTime: any = "10.00";
   bbirthPlace: any;
   bbirthStar: any;
   brashi: any;
   gname: any;
   gbirthDay: any;
-  gbirthTime: any = "10.00";
   gbirthPlace: any;
   gbirthStar: any;
   grashi: any;
@@ -99,9 +97,15 @@ export class MarriagematchComponent implements OnInit {
 
   open(e) {
     const amazingTimePicker = this.atp.open();
-    amazingTimePicker.afterClose().subscribe(time => {
-      e.target.value = time;
-    });
+    if(e.target.id == 'time'){
+      amazingTimePicker.afterClose().subscribe(time => {
+        (<HTMLInputElement>document.getElementById('time')).value = time;
+      });
+    }else{
+      amazingTimePicker.afterClose().subscribe(time => {
+        (<HTMLInputElement>document.getElementById('mtime')).value = time;
+      });
+    }
   }
 
   result(){
@@ -127,20 +131,16 @@ export class MarriagematchComponent implements OnInit {
   }
 
   submit(){
-    (<HTMLFormElement>document.getElementById("bride")).submit();
-    (<HTMLFormElement>document.getElementById("groom")).submit();
     let data = {};
     data['bname'] = this.bname;
     data['bbirthDay'] = this.bbirthDay;
-    data['bbirthTime'] = this.bbirthTime;
     data['bbirthPlace'] = this.bbirthPlace;
-    data['bbirthStar'] = this.bbirthTime;
+    data['bbirthStar'] = this.bbirthStar;
     data['brashi'] = this.bbirthPlace;
     data['gname'] = this.gname;
     data['gbirthDay'] = this.gbirthDay;
-    data['gbirthTime'] = this.gbirthTime;
     data['gbirthPlace'] = this.gbirthPlace;
-    data['gbirthStar'] = this.gbirthTime;
+    data['gbirthStar'] = this.gbirthStar;
     data['grashi'] = this.gbirthPlace;
     data['emailAddress'] = this.emailAddress;
     data['mobile'] = this.mobile;
@@ -156,8 +156,8 @@ export class MarriagematchComponent implements OnInit {
       userData : data
     }
 
-    if(data['bname'] && data['bbirthDay'] && data['bbirthTime'] && data['bbirthPlace'] && data['bbirthStar'] && data['brashi'] && data['emailAddress']
-  && data['gname'] && data['gbirthDay'] && data['gbirthTime'] && data['gbirthPlace'] && data['gbirthStar'] && data['grashi'] && data['mobile']){
+    if(data['bname'] && data['bbirthDay'] && data['bbirthPlace'] && data['bbirthStar'] && data['brashi'] && data['emailAddress']
+  && data['gname'] && data['gbirthDay'] && data['gbirthPlace'] && data['gbirthStar'] && data['grashi'] && data['mobile']){
       return this.http.post(`https://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
         window.location.href = response.toString();
       })
