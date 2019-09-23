@@ -98,7 +98,7 @@ export class HomeComponent implements OnInit {
     }
 
     if(data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']){
-      return this.http.post(`https://emailserverapp.herokuapp.com/pay`, paymentData, {}).subscribe((response) => {
+      return this.http.post(`https://emailserverapp.herokuapp.com/pay?type=1`, paymentData, {}).subscribe((response) => {
         window.location.href = response.toString();
       })
     }else{

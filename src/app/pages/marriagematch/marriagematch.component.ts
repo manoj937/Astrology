@@ -10,7 +10,7 @@ import {
   styleUrls: ['./marriagematch.component.css']
 })
 export class MarriagematchComponent implements OnInit {
-
+  
   constructor(private atp: AmazingTimePickerService, public marriagematch: commonService, private http: HttpClient) { }
   public groomstar = []; 
   public bridestar =[];
@@ -35,6 +35,8 @@ export class MarriagematchComponent implements OnInit {
   grashi: any;
   emailAddress: any;
   mobile: any;
+  bbirthTime: any;
+  gbirthTime: any;
 
   ngOnInit() {
     this.reset();
@@ -100,10 +102,12 @@ export class MarriagematchComponent implements OnInit {
     if(e.target.id == 'time'){
       amazingTimePicker.afterClose().subscribe(time => {
         (<HTMLInputElement>document.getElementById('time')).value = time;
+        this.bbirthTime = time;
       });
     }else{
       amazingTimePicker.afterClose().subscribe(time => {
         (<HTMLInputElement>document.getElementById('mtime')).value = time;
+        this.gbirthTime = time;
       });
     }
   }
@@ -136,10 +140,12 @@ export class MarriagematchComponent implements OnInit {
     data['bbirthDay'] = this.bbirthDay;
     data['bbirthPlace'] = this.bbirthPlace;
     data['bbirthStar'] = this.bbirthStar;
+    data['bbirthTime'] = this.bbirthTime;
     data['brashi'] = this.bbirthPlace;
     data['gname'] = this.gname;
     data['gbirthDay'] = this.gbirthDay;
     data['gbirthPlace'] = this.gbirthPlace;
+    data['gbirthTime'] = this.gbirthTime;
     data['gbirthStar'] = this.gbirthStar;
     data['grashi'] = this.gbirthPlace;
     data['emailAddress'] = this.emailAddress;
@@ -149,9 +155,10 @@ export class MarriagematchComponent implements OnInit {
     const paymentData = {
       purpose : 'Astro Payment',
       amount: '500',
+      buyer_name: `${this.bname}_${this.gname}`,
       email: this.emailAddress,
       phone: this.mobile,
-      redirect_url : `https://emailserverapp.herokuapp.com/callback`,
+      redirect_url : `https://emailserverapp.herokuapp.com/marriage_match_callback`,
       webhook_url: '/webhook/',
       userData : data
     }
