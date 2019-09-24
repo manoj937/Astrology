@@ -20,7 +20,7 @@ export class MarriagematchComponent implements OnInit {
   public match = 0;
   public matchResult;
   public matchresults;
-  public final = "உத்தமம்";
+  public final = "மிக நன்று";
   public finalClass = "success";
   public finalr;
   bname: any;
