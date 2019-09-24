@@ -125,33 +125,50 @@ export class MarriagematchComponent implements OnInit {
       }
       this.final = this.finalr;
       if(this.final =="உத்தமம்"){
+        this.final = "மிக நன்று";
         this.finalClass = "success";
       }else if(this.final =="மத்திமம்"){
+        this.final = "நன்று";
         this.finalClass = "warning";
       }else{
+        this.final = "பொருத்தம் இல்லை";
         this.finalClass = "danger";
       }
     }
   }
 
   submit(){
+    let br, bn, gr, gn;
+    for(let r of this.marrigedata[1]){
+      if(r.natchathiram == this.gbirthStar){
+        gr = r.star;
+      }
+      if(r.natchathiram == this.bbirthStar){
+        br = r.star;
+      }
+      if(r.raashi == this.brashi){
+        bn = r.sign;
+      }
+      if(r.raashi == this.grashi){
+        gn = r.sign;
+      }
+    }
     let data = {};
     data['bname'] = this.bname;
     data['bbirthDay'] = this.bbirthDay;
     data['bbirthPlace'] = this.bbirthPlace;
-    data['bbirthStar'] = this.bbirthStar;
+    data['bbirthStar'] = bn;
     data['bbirthTime'] = this.bbirthTime;
-    data['brashi'] = this.bbirthPlace;
+    data['brashi'] = br;
     data['gname'] = this.gname;
     data['gbirthDay'] = this.gbirthDay;
     data['gbirthPlace'] = this.gbirthPlace;
     data['gbirthTime'] = this.gbirthTime;
-    data['gbirthStar'] = this.gbirthStar;
-    data['grashi'] = this.gbirthPlace;
+    data['gbirthStar'] = gr;
+    data['grashi'] = gn;
     data['emailAddress'] = this.emailAddress;
     data['mobile'] = this.mobile;
 
-    console.log(data);
     const paymentData = {
       purpose : 'Astro Payment',
       amount: '500',

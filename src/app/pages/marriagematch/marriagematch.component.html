@@ -31,17 +31,17 @@
                                 <input id="place" class="form-control" placeholder="பிறந்த ஊர்" type="text" [(ngModel)]="bbirthPlace" [ngModelOptions]="{standalone: true}">
                             </div>
                             <div class="form-group">
-                                <label for="nakshatram">நட்சத்திரம்</label>
-                                <span style="color: red;margin-left: 5px">*</span>
-                                <select id="nakshatram" class="custom-select" (change)="reset()" [(ngModel)]="bbirthStar" [ngModelOptions]="{standalone: true}">
-                                    <option *ngFor="let bride of bridestar" value="{{bride}}">{{bride}}</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
                                 <label for="rashi">ராசி</label>
                                 <span style="color: red;margin-left: 5px">*</span>
                                 <select id="rashi" class="custom-select" (change)="reset()" [(ngModel)]="brashi" [ngModelOptions]="{standalone: true}">
                                     <option *ngFor="let raashi of brideraashi" value="{{raashi}}">{{raashi}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nakshatram">நட்சத்திரம்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <select id="nakshatram" class="custom-select" (change)="reset()" [(ngModel)]="bbirthStar" [ngModelOptions]="{standalone: true}">
+                                    <option *ngFor="let bride of bridestar" value="{{bride}}">{{bride}}</option>
                                 </select>
                             </div>
                         </form>
@@ -72,19 +72,19 @@
                                 <input id="mplace" class="form-control" placeholder="பிறந்த ஊர்" type="text" [(ngModel)]="gbirthPlace" [ngModelOptions]="{standalone: true}">
                             </div>
                             <div class="form-group" style="position: relative;">
-                                <label for="mnakshatram">நட்சத்திரம்</label>
-                                <span style="color: red;margin-left: 5px">*</span>
-                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
-                                <select id="mnakshatram" class="custom-select" (change)="groomNatchatram($event)" [(ngModel)]="gbirthStar" [ngModelOptions]="{standalone: true}">
-                                    <option *ngFor="let groom of groomstar" value="{{groom}}">{{groom}}</option>
-                                </select>
-                            </div>
-                            <div class="form-group" style="position: relative;">
                                 <label for="mrashi">ராசி</label>
                                 <span style="color: red;margin-left: 5px">*</span>
                                 <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
                                 <select id="mrashi" class="custom-select" (change)="groomRashi($event)" [(ngModel)]="grashi" [ngModelOptions]="{standalone: true}">
                                     <option *ngFor="let groom of groomraashi" value="{{groom}}">{{groom}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="position: relative;">
+                                <label for="mnakshatram">நட்சத்திரம்</label>
+                                <span style="color: red;margin-left: 5px">*</span>
+                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="mnakshatram" class="custom-select" (change)="groomNatchatram($event)" [(ngModel)]="gbirthStar" [ngModelOptions]="{standalone: true}">
+                                    <option *ngFor="let groom of groomstar" value="{{groom}}">{{groom}}</option>
                                 </select>
                             </div>
                         </form>
