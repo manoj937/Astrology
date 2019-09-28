@@ -1,1658 +1,2080 @@
 [{
-    "matches":["தினம்", "கணம்", "மகேந்திரம்", "ஸ்திரீதீர்க்கம்", "யோனி", "ராசி", "ராசி அதிபதி", "வசியம்", "ரஜ்ஜு", "வேதை"]
-},[{
+    "matches": ["தினம்", "கணம்", "மகேந்திரம்", "ஸ்திரீதீர்க்கம்", "யோனி", "ராசி", "ராசி அதிபதி", "வசியம்", "ரஜ்ஜு", "வேதை"]
+  },
+  [{
     "star": "ashupathi",
     "natchathiram": "அசுபதி",
-    "paatham": "",
     "sign": "mesham",
     "raashi": "மேஷம்",
-    "match":[{
-        "num": 1,
-        "star": "ashupathi",
-        "natchathiram": "அசுபதி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 2,
-        "star": "parani",
-        "natchathiram": "பரணி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 3,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "1",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[2, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 4,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "2, 3, 4",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[2, 5, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 5,
-        "star": "rohini",
-        "natchathiram": "ரோகினி",
-        "paatham": "",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 6,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "1, 2",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[2, 5, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 7,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "3, 4",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[2, 5, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 8,
-        "star": "thiruvaathirai",
-        "natchathiram": "திருவாதிரை",
-        "paatham": "",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 9,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "1, 2, 3",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[2, 3, 5, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 10,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "4",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[2, 3, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 11,
-        "star": "poosam",
-        "natchathiram": "பூசம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 4, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 12,
-        "star": "aayilyam",
-        "natchathiram": "ஆயில்யம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 13,
-        "star": "maham",
-        "natchathiram": "மகம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 14,
-        "star": "aayilyam",
-        "natchathiram": "பூரம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 15,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "1",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 16,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "2, 3, 4",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[2, 4, 5, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 17,
-        "star": "hashtham",
-        "natchathiram": "ஹஸ்தம்",
-        "paatham": "",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 18,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "1, 2",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[2, 4, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 19,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "3, 4",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 20,
-        "star": "swathi",
-        "natchathiram": "சுவாதி",
-        "paatham": "",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 21,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "1, 2, 3",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[2, 3, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 22,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "4",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[2, 3, 4, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 23,
-        "star": "anusham",
-        "natchathiram": "அனுஷம்",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 24,
-        "star": "kettai",
-        "natchathiram": "கேட்டை",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 25,
-        "star": "moolam",
-        "natchathiram": "மூலம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 26,
-        "star": "pooraadam",
-        "natchathiram": "பூராடம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 27,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "1",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 28,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "2, 3, 4",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 29,
-        "star": "thiruvonam",
-        "natchathiram": "திருவோணம்",
-        "paatham": "",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 30,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "1, 2",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 31,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "3, 4",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 32,
-        "star": "sathayam",
-        "natchathiram": "சதயம்",
-        "paatham": "",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 33,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "1, 2, 3",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[2, 3, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 34,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "4",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[2, 3, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 35,
-        "star": "uthirattaathi",
-        "natchathiram": "உத்ரட்டாதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 36,
-        "star": "revathi",
-        "natchathiram": "ரேவதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[9],
-        "result": "அதமம்"
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [2, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [2, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [2, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [2, 5, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [2, 3, 5, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [2, 3, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 2, 3, 4-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [2, 4, 5, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 3, 4, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [2, 4, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [2, 3, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [2, 3, 4, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [2, 3, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [2, 3, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [9],
+      "result": "அதமம்"
     }]
-},{
+  }, {
     "star": "parani",
     "natchathiram": "பரணி",
-    "paatham": "",
     "sign": "mesham",
     "raashi": "மேஷம்",
-    "match":[{
-        "num": 1,
-        "star": "ashupathi",
-        "natchathiram": "அசுபதி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 2,
-        "star": "parani",
-        "natchathiram": "பரணி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[],
-        "result": "அதமம்"
-    },{
-        "num": 3,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "1",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 4,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "2, 3, 4",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 5,
-        "star": "rohini",
-        "natchathiram": "ரோகினி",
-        "paatham": "",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[2, 5, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 6,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "1, 2",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 7,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "3, 4",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 5, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 8,
-        "star": "thiruvaathirai",
-        "natchathiram": "திருவாதிரை",
-        "paatham": "",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[2, 5, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 9,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "1, 2, 3",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 5, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 10,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "4",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 11,
-        "star": "poosam",
-        "natchathiram": "பூசம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 12,
-        "star": "aayilyam",
-        "natchathiram": "ஆயில்யம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 4, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 13,
-        "star": "maham",
-        "natchathiram": "மகம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 14,
-        "star": "aayilyam",
-        "natchathiram": "பூரம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 15,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "1",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 16,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "2, 3, 4",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 4, 5, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 17,
-        "star": "hashtham",
-        "natchathiram": "ஹஸ்தம்",
-        "paatham": "",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[2, 4, 5, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 18,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "1, 2",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 19,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "3, 4",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 20,
-        "star": "swathi",
-        "natchathiram": "சுவாதி",
-        "paatham": "",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 21,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "1, 2, 3",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 22,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "4",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 4, 6, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 23,
-        "star": "anusham",
-        "natchathiram": "அனுஷம்",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 24,
-        "star": "kettai",
-        "natchathiram": "கேட்டை",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 25,
-        "star": "moolam",
-        "natchathiram": "மூலம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 4, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 26,
-        "star": "pooraadam",
-        "natchathiram": "பூராடம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 27,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "1",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 28,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "2, 3, 4",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 29,
-        "star": "thiruvonam",
-        "natchathiram": "திருவோணம்",
-        "paatham": "",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 30,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "1, 2",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 31,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "3, 4",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 32,
-        "star": "sathayam",
-        "natchathiram": "சதயம்",
-        "paatham": "",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 33,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "1, 2, 3",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 34,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "4",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 35,
-        "star": "uthirattaathi",
-        "natchathiram": "உத்ரட்டாதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 36,
-        "star": "revathi",
-        "natchathiram": "ரேவதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 4, 5, 7, 9, 10],
-        "result": "உத்தமம்"
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [],
+      "result": "அதமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [2, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 3, 5, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [2, 5, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 5, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 2, 3, 4-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [2, 4, 5, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 3, 4, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 4, 6, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 3, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
     }]
-},{
+  }, {
     "star": "karthigai",
-    "natchathiram": "கார்த்திகை",
-    "paatham": "1",
+    "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+
     "sign": "mesham",
     "raashi": "மேஷம்",
-    "match":[{
-        "num": 1,
-        "star": "ashupathi",
-        "natchathiram": "அசுபதி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 2,
-        "star": "parani",
-        "natchathiram": "பரணி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 4, 5, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 3,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "1",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 4,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "2, 3, 4",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 5,
-        "star": "rohini",
-        "natchathiram": "ரோகினி",
-        "paatham": "",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 5, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 6,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "1, 2",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[2, 5, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 7,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "3, 4",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[2, 5, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 8,
-        "star": "thiruvaathirai",
-        "natchathiram": "திருவாதிரை",
-        "paatham": "",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 3, 5, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 9,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "1, 2, 3",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 10,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "4",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 11,
-        "star": "poosam",
-        "natchathiram": "பூசம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 12,
-        "star": "aayilyam",
-        "natchathiram": "ஆயில்யம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[2, 3, 5, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 13,
-        "star": "maham",
-        "natchathiram": "மகம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 14,
-        "star": "aayilyam",
-        "natchathiram": "பூரம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 4, 5, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 15,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "1",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 16,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "2, 3, 4",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 17,
-        "star": "hashtham",
-        "natchathiram": "ஹஸ்தம்",
-        "paatham": "",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 4, 5, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 18,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "1, 2",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[2, 4, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 19,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "3, 4",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 20,
-        "star": "swathi",
-        "natchathiram": "சுவாதி",
-        "paatham": "",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 21,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "1, 2, 3",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 22,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "4",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 23,
-        "star": "anusham",
-        "natchathiram": "அனுஷம்",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 24,
-        "star": "kettai",
-        "natchathiram": "கேட்டை",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[2, 3, 4, 5, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 25,
-        "star": "moolam",
-        "natchathiram": "மூலம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 26,
-        "star": "pooraadam",
-        "natchathiram": "பூராடம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 4, 6, 7, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 27,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "1",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 28,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "2, 3, 4",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 29,
-        "star": "thiruvonam",
-        "natchathiram": "திருவோணம்",
-        "paatham": "",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 30,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "1, 2",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 31,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "3, 4",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[2, 4, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 32,
-        "star": "sathayam",
-        "natchathiram": "சதயம்",
-        "paatham": "",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 33,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "1, 2, 3",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 34,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "4",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[9],
-        "result": "அதமம்"
-    },{
-        "num": 35,
-        "star": "uthirattaathi",
-        "natchathiram": "உத்ரட்டாதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 4, 5, 6, 7, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 36,
-        "star": "revathi",
-        "natchathiram": "ரேவதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[2, 3, 4, 5, 6, 7, 9, 10],
-        "result": "உத்தமம்"
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 4, 5, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [2, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [2, 5, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 3, 5, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [2, 3, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 4, 5, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [2, 4, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [2, 3, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 4, 6, 7, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 4, 5, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
     }]
-},{
+  }, {
     "star": "karthigai",
-    "natchathiram": "கார்த்திகை",
-    "paatham": "2, 3, 4",
+    "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
     "sign": "rishabam",
     "raashi": "ரிஷபம்",
-    "match":[{
-        "num": 1,
-        "star": "ashupathi",
-        "natchathiram": "அசுபதி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 2,
-        "star": "parani",
-        "natchathiram": "பரணி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 3,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "1",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 4,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "2, 3, 4",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 5,
-        "star": "rohini",
-        "natchathiram": "ரோகினி",
-        "paatham": "",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 6,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "1, 2",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 7,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "3, 4",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 8,
-        "star": "thiruvaathirai",
-        "natchathiram": "திருவாதிரை",
-        "paatham": "",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 9,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "1, 2, 3",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 10,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "4",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 11,
-        "star": "poosam",
-        "natchathiram": "பூசம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 12,
-        "star": "aayilyam",
-        "natchathiram": "ஆயில்யம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 13,
-        "star": "maham",
-        "natchathiram": "மகம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 14,
-        "star": "aayilyam",
-        "natchathiram": "பூரம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[9],
-        "result": "மத்திமம்"
-    },{
-        "num": 15,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "1",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 16,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "2, 3, 4",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 17,
-        "star": "hashtham",
-        "natchathiram": "ஹஸ்தம்",
-        "paatham": "",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 18,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "1, 2",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 19,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "3, 4",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 20,
-        "star": "swathi",
-        "natchathiram": "சுவாதி",
-        "paatham": "",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 21,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "1, 2, 3",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 22,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "4",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 23,
-        "star": "anusham",
-        "natchathiram": "அனுஷம்",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 24,
-        "star": "kettai",
-        "natchathiram": "கேட்டை",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 25,
-        "star": "moolam",
-        "natchathiram": "மூலம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 26,
-        "star": "pooraadam",
-        "natchathiram": "பூராடம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 27,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "1",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 28,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "2, 3, 4",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 29,
-        "star": "thiruvonam",
-        "natchathiram": "திருவோணம்",
-        "paatham": "",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 30,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "1, 2",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 31,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "3, 4",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 32,
-        "star": "sathayam",
-        "natchathiram": "சதயம்",
-        "paatham": "",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 33,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "1, 2, 3",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 34,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "4",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 35,
-        "star": "uthirattaathi",
-        "natchathiram": "உத்ரட்டாதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 36,
-        "star": "revathi",
-        "natchathiram": "ரேவதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 4, 5, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 5, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [2, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [2, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 3, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 5, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [2, 3, 5, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 4, 5, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 2, 3, 4-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [2, 4, 7, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [2, 4, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 4, 7, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [2, 4, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 4, 5, 6, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
     }]
-},{
-    "star": "karthigai",
-    "natchathiram": "கார்த்திகை",
-    "paatham": "1",
-    "sign": "mesham",
-    "raashi": "மேஷம்",
-    "match":[{
-        "num": 1,
-        "star": "ashupathi",
-        "natchathiram": "அசுபதி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 2,
-        "star": "parani",
-        "natchathiram": "பரணி",
-        "paatham": "",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 3,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "1",
-        "sign": "mesham",
-        "raashi": "மேஷம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 4,
-        "star": "karthigai",
-        "natchathiram": "கார்த்திகை",
-        "paatham": "2, 3, 4",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 5,
-        "star": "rohini",
-        "natchathiram": "ரோகினி",
-        "paatham": "",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 6,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "1, 2",
-        "sign": "rishabam",
-        "raashi": "ரிஷபம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 7,
-        "star": "mirugasirisham",
-        "natchathiram": "மிருக சீரிஷம் ",
-        "paatham": "3, 4",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 8,
-        "star": "thiruvaathirai",
-        "natchathiram": "திருவாதிரை",
-        "paatham": "",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 9,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "1, 2, 3",
-        "sign": "mithunam",
-        "raashi": "மிதுனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 10,
-        "star": "punarpoosam",
-        "natchathiram": "புனர்பூசம்",
-        "paatham": "4",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 11,
-        "star": "poosam",
-        "natchathiram": "பூசம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 12,
-        "star": "aayilyam",
-        "natchathiram": "ஆயில்யம்",
-        "paatham": "",
-        "sign": "kadagam",
-        "raashi": "கடகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 13,
-        "star": "maham",
-        "natchathiram": "மகம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 14,
-        "star": "aayilyam",
-        "natchathiram": "பூரம்",
-        "paatham": "",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[9],
-        "result": "மத்திமம்"
-    },{
-        "num": 15,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "1",
-        "sign": "simmam",
-        "raashi": "சிம்மம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 16,
-        "star": "uthiram",
-        "natchathiram": "உத்திரம்",
-        "paatham": "2, 3, 4",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 17,
-        "star": "hashtham",
-        "natchathiram": "ஹஸ்தம்",
-        "paatham": "",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 18,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "1, 2",
-        "sign": "kanni",
-        "raashi": "கன்னி",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 19,
-        "star": "siththirai",
-        "natchathiram": "சித்திரை",
-        "paatham": "3, 4",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 20,
-        "star": "swathi",
-        "natchathiram": "சுவாதி",
-        "paatham": "",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 21,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "1, 2, 3",
-        "sign": "thulaam",
-        "raashi": "துலாம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 22,
-        "star": "vishagam",
-        "natchathiram": "விசாகம்",
-        "paatham": "4",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 23,
-        "star": "anusham",
-        "natchathiram": "அனுஷம்",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 24,
-        "star": "kettai",
-        "natchathiram": "கேட்டை",
-        "paatham": "",
-        "sign": "viruchigam",
-        "raashi": "விருச்சிகம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 25,
-        "star": "moolam",
-        "natchathiram": "மூலம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 26,
-        "star": "pooraadam",
-        "natchathiram": "பூராடம்",
-        "paatham": "",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 27,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "1",
-        "sign": "thanush",
-        "raashi": "தனுசு",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 28,
-        "star": "uthiraadam",
-        "natchathiram": "உத்திராடம்",
-        "paatham": "2, 3, 4",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 29,
-        "star": "thiruvonam",
-        "natchathiram": "திருவோணம்",
-        "paatham": "",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 30,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "1, 2",
-        "sign": "maharam",
-        "raashi": "மகரம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 31,
-        "star": "avittam",
-        "natchathiram": "அவிட்டம்",
-        "paatham": "3, 4",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 32,
-        "star": "sathayam",
-        "natchathiram": "சதயம்",
-        "paatham": "",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
-    },{
-        "num": 33,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "1, 2, 3",
-        "sign": "kumbam",
-        "raashi": "கும்பம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 34,
-        "star": "poorattaathi",
-        "natchathiram": "பூரட்டாதி",
-        "paatham": "4",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "அதமம்"
-    },{
-        "num": 35,
-        "star": "uthirattaathi",
-        "natchathiram": "உத்ரட்டாதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "மத்திமம்"
-    },{
-        "num": 36,
-        "star": "revathi",
-        "natchathiram": "ரேவதி",
-        "paatham": "",
-        "sign": "meenam",
-        "raashi": "மீனம்",
-        "matches":[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        "result": "உத்தமம்"
+  }, {
+    "star": "rohini",
+    "natchathiram": "ரோகினி",
+    "sign": "rishabam",
+    "raashi": "ரிஷபம்",
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [2, 3, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 3, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 3, 5, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [2, 5, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 5, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [2, 3, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 2, 3, 4-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [2, 3, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
     }]
-}]]
+  }, {
+    "star": "mirugasirisham",
+    "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+    "sign": "rishabam",
+    "raashi": "ரிஷபம்",
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [2, 5, 7, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [2, 5, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 3, 5, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [2, 5, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [2, 3, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 4, 5, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 2, 3, 4-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 4, 5, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [2, 3, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 5, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [9],
+      "result": "அதமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [2, 4, 5, 6, 7, 9, 10],
+      "result": "உத்தமம்"
+    }]
+  },{
+    "star": "mirugasirisham",
+    "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+    "sign": "rishabam",
+    "raashi": "ரிஷபம்",
+    "match": [{
+      "num": 1,
+      "star": "ashupathi",
+      "natchathiram": "அசுபதி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 2,
+      "star": "parani",
+      "natchathiram": "பரணி",
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 3,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 1-ம் பாதம்",
+
+      "sign": "mesham",
+      "raashi": "மேஷம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 4,
+      "star": "karthigai",
+      "natchathiram": "கார்த்திகை 2, 3, 4-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 5,
+      "star": "rohini",
+      "natchathiram": "ரோகினி",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 6,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 1, 2-ம் பாதம்",
+      "sign": "rishabam",
+      "raashi": "ரிஷபம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 7,
+      "star": "mirugasirisham",
+      "natchathiram": "மிருக சீரிஷம் 3, 4-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 8,
+      "star": "thiruvaathirai",
+      "natchathiram": "திருவாதிரை",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 9,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 1, 2, 3-ம் பாதம்",
+      "sign": "mithunam",
+      "raashi": "மிதுனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 10,
+      "star": "punarpoosam",
+      "natchathiram": "புனர்பூசம் 4-ம் பாதம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 11,
+      "star": "poosam",
+      "natchathiram": "பூசம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 12,
+      "star": "aayilyam",
+      "natchathiram": "ஆயில்யம்",
+      "sign": "kadagam",
+      "raashi": "கடகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 13,
+      "star": "maham",
+      "natchathiram": "மகம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 14,
+      "star": "aayilyam",
+      "natchathiram": "பூரம்",
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [9],
+      "result": "மத்திமம்"
+    }, {
+      "num": 15,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 1-ம் பாதம்",
+
+      "sign": "simmam",
+      "raashi": "சிம்மம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 16,
+      "star": "uthiram",
+      "natchathiram": "உத்திரம் 2, 3, 4-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 17,
+      "star": "hashtham",
+      "natchathiram": "ஹஸ்தம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 18,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 1, 2-ம் பாதம்",
+      "sign": "kanni",
+      "raashi": "கன்னி",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 19,
+      "star": "siththirai",
+      "natchathiram": "சித்திரை 3, 4-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 20,
+      "star": "swathi",
+      "natchathiram": "சுவாதி",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 21,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 1, 2, 3-ம் பாதம்",
+      "sign": "thulaam",
+      "raashi": "துலாம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 22,
+      "star": "vishagam",
+      "natchathiram": "விசாகம் 4-ம் பாதம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 23,
+      "star": "anusham",
+      "natchathiram": "அனுஷம்",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 24,
+      "star": "kettai",
+      "natchathiram": "கேட்டை",
+      "sign": "viruchigam",
+      "raashi": "விருச்சிகம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 25,
+      "star": "moolam",
+      "natchathiram": "மூலம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 26,
+      "star": "pooraadam",
+      "natchathiram": "பூராடம்",
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 27,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 1-ம் பாதம்",
+
+      "sign": "thanush",
+      "raashi": "தனுசு",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 28,
+      "star": "uthiraadam",
+      "natchathiram": "உத்திராடம் 2, 3, 4-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 29,
+      "star": "thiruvonam",
+      "natchathiram": "திருவோணம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 30,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 1, 2-ம் பாதம்",
+      "sign": "maharam",
+      "raashi": "மகரம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 31,
+      "star": "avittam",
+      "natchathiram": "அவிட்டம் 3, 4-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 32,
+      "star": "sathayam",
+      "natchathiram": "சதயம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }, {
+      "num": 33,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 1, 2, 3-ம் பாதம்",
+      "sign": "kumbam",
+      "raashi": "கும்பம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 34,
+      "star": "poorattaathi",
+      "natchathiram": "பூரட்டாதி 4-ம் பாதம்",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "அதமம்"
+    }, {
+      "num": 35,
+      "star": "uthirattaathi",
+      "natchathiram": "உத்ரட்டாதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "மத்திமம்"
+    }, {
+      "num": 36,
+      "star": "revathi",
+      "natchathiram": "ரேவதி",
+      "sign": "meenam",
+      "raashi": "மீனம்",
+      "matches": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result": "உத்தமம்"
+    }]
+  }]
+]

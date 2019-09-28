@@ -20,8 +20,10 @@ export class MarriagematchComponent implements OnInit {
   public match = 0;
   public matchResult;
   public matchresults;
-  public final = "மிக நன்று";
-  public finalClass = "success";
+  public final;
+  public successClass = "badge-light";
+  public warnClass = "badge-light";
+  public dangerClass = "badge-light";
   public finalr;
   bname: any;
   bbirthDay: any;
@@ -113,6 +115,9 @@ export class MarriagematchComponent implements OnInit {
   }
 
   result(){
+    this.successClass = "badge-light";
+    this.warnClass = "badge-light";
+    this.dangerClass = "badge-light";
     if(this.match==undefined || this.matchResult ==undefined){
       alert('Kindly choose raasi or natchatra again');
     }else{
@@ -125,14 +130,11 @@ export class MarriagematchComponent implements OnInit {
       }
       this.final = this.finalr;
       if(this.final =="உத்தமம்"){
-        this.final = "மிக நன்று";
-        this.finalClass = "success";
+        this.successClass = "badge-success";
       }else if(this.final =="மத்திமம்"){
-        this.final = "நன்று";
-        this.finalClass = "warning";
+        this.warnClass = "badge-warning";
       }else{
-        this.final = "பொருத்தம் இல்லை";
-        this.finalClass = "danger";
+        this.dangerClass = "badge-danger";
       }
     }
   }
