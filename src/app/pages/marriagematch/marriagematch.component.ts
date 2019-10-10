@@ -63,40 +63,46 @@ export class MarriagematchComponent implements OnInit {
     });
   }
 
-  groomNatchatram(element){
-    this.groomraashi = [];
-    let brideStar = (<HTMLSelectElement>document.getElementById('nakshatram')).value;
-    let brideRashi = (<HTMLSelectElement>document.getElementById('rashi')).value;
-    for(let groommatch of this.marrigedata[1]){
-      if(brideStar === groommatch.natchathiram && brideRashi === groommatch.raashi){
-        for(let match of groommatch.match){
-          if(element.target.value === match.natchathiram){
-            this.groomraashi.push(match.raashi);
-            this.matchResult = match.matches;
-            this.finalr = match.result;
-          }
+  brideDetails(e){
+      if(e.target.id == 'rashi'){
+        this.bridestar = [];
+      }else if(e.target.id == 'nakshatram'){
+        this.brideraashi = [];
+      }
+      
+      for(let bride of this.marrigedata[1]){
+        if( e == '' || e.target.value == ''){
+          this.bridestar.push(bride.natchathiram);
+          this.brideraashi.push(bride.raashi);
+        }else if(e.target.value == bride.raashi){
+          this.bridestar.push(bride.natchathiram);
+        }else if(e.target.value == bride.natchathiram){
+          this.brideraashi.push(bride.raashi);
         }
       }
-    }
-    this.groomraashi = [...new Set(this.groomraashi)];
+       this.bridestar = [...new Set(this.bridestar)];
+       this.brideraashi = [...new Set(this.brideraashi)];
   }
 
-  groomRashi(element){
-    this.groomstar = [];
-    let brideStar = (<HTMLSelectElement>document.getElementById('nakshatram')).value;
-    let brideRashi = (<HTMLSelectElement>document.getElementById('rashi')).value;
-    for(let groommatch of this.marrigedata[1]){
-      if(brideStar === groommatch.natchathiram && brideRashi === groommatch.raashi){
-        for(let match of groommatch.match){
-          if(element.target.value === match.raashi){
-            this.groomstar.push(match.natchathiram);
-            this.matchResult = match.matches;
-            this.finalr = match.result;
-          }
-        }
+  groomDetails(e){
+    if(e.target.id == 'mrashi'){
+      this.groomstar = [];
+    }else if(e.target.id == 'mnakshatram'){
+      this.groomraashi = [];
+    }
+    
+    for(let groom of this.marrigedata[1]){
+      if(e.target.value == ''){
+        this.groomstar.push(groom.natchathiram);
+        this.groomraashi.push(groom.raashi);
+      }else if(e.target.value == groom.raashi){
+        this.groomstar.push(groom.natchathiram);
+      }else if(e.target.value == groom.natchathiram){
+        this.groomraashi.push(groom.raashi);
       }
     }
-    this.groomstar = [...new Set(this.groomstar)];
+     this.groomstar = [...new Set(this.groomstar)];
+     this.groomraashi = [...new Set(this.groomraashi)];
   }
 
   open(e) {
