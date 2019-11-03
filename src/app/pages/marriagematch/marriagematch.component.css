@@ -54,6 +54,20 @@ img{
     }
 }
 
+.det{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+.detsub1{
+    flex-grow: 1;
+    margin-right: 20px;
+}
+.detsub2{
+    flex-grow: 1;
+    margin-left: 20px;
+}
 .custom-switch .custom-control-label::before{
     pointer-events: none;
 }

@@ -44,6 +44,22 @@ export class MarriagematchComponent implements OnInit {
     this.reset();
   }
 
+  finalmatch(){
+    if((<HTMLSelectElement>document.getElementById('rashi')).value !== '' && (<HTMLSelectElement>document.getElementById('mrashi')).value !== ''
+    && (<HTMLSelectElement>document.getElementById('nakshatram')).value !== '' && (<HTMLSelectElement>document.getElementById('mnakshatram')).value !== '') {
+      for(let i=0;i<this.marrigedata[1].length;i++){
+        if(this.marrigedata[1][i].raashi === (<HTMLSelectElement>document.getElementById('rashi')).value && this.marrigedata[1][i].natchathiram === (<HTMLSelectElement>document.getElementById('nakshatram')).value){
+          for(let j=0;j< this.marrigedata[1][i].match.length;j++){
+            if(this.marrigedata[1][i].match[j].raashi === (<HTMLSelectElement>document.getElementById('mrashi')).value && this.marrigedata[1][i].match[j].natchathiram === (<HTMLSelectElement>document.getElementById('mnakshatram')).value){
+              this.matchResult = this.marrigedata[1][i].match[j].matches;
+              this.finalr = this.marrigedata[1][i].match[j].result;
+            }
+          }
+        }
+      }
+    }
+  }
+
   reset(){
     this.marriagematch.getConfig('assets/marriagematch.json').subscribe(data => {
       this.marrigedata = data;
@@ -82,6 +98,7 @@ export class MarriagematchComponent implements OnInit {
       }
        this.bridestar = [...new Set(this.bridestar)];
        this.brideraashi = [...new Set(this.brideraashi)];
+       this.finalmatch();
   }
 
   groomDetails(e){
@@ -103,6 +120,7 @@ export class MarriagematchComponent implements OnInit {
     }
      this.groomstar = [...new Set(this.groomstar)];
      this.groomraashi = [...new Set(this.groomraashi)];
+     this.finalmatch();
   }
 
   open(e) {
