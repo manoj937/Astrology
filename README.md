@@ -1,27 +1,52 @@
-# Astrology
+# Astrology Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+This is a comprehensive Astrology application consisting of an Angular 8 Frontend and a Node.js/Express Backend.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Before you begin, ensure you have the following installed:
 
-## Code scaffolding
+*   **Node.js**: Recommended version 10.x or 12.x (due to Angular 8 and older dependencies).
+*   **Angular CLI**: Install globally via `npm install -g @angular/cli@8.x`.
+*   **MySQL**: A running MySQL server instance.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Structure
 
-## Build
+*   `src/`: Angular Frontend source code.
+*   `Backend/`: Node.js Backend source code.
+*   `docs/`: Documentation.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Local Development Setup
 
-## Running unit tests
+### 1. Database Setup
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.  Create a MySQL database (e.g., `darshini_astrology`).
+2.  Import the project schema from `Backend/scripts/database.sql`.
+3.  Update the database connection settings in `Backend/mysql_conn.js`.
+    > **Note**: For security, it is best practice to use environment variables instead of hardcoding credentials.
 
-## Running end-to-end tests
+### 2. Backend Setup
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+The backend runs on Node.js and handles emails and payment processing.
 
-## Further help
+```bash
+cd Backend
+npm install
+node email_app.js
+```
+The server will start on port `49153`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### 3. Frontend Setup
+
+The frontend is an Angular 8 application.
+
+```bash
+# From the root directory
+npm install
+ng serve
+```
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Deployment
+
+For detailed instructions on deploying this project to a cPanel environment, please read the [cPanel Deployment Guide](docs/CPANEL_DEPLOYMENT.md).
