@@ -1,16 +1,15 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  HttpClient
-} from '@angular/common/http';
-import {Router} from "@angular/router";
-import { AmazingTimePickerService } from 'amazing-time-picker';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 import { commonService } from '../../common.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -18,7 +17,7 @@ export class HomeComponent implements OnInit {
   name: any;
   gender: any;
   birthDay: any;
-  birthTime: any ="10.00";
+  birthTime: any = "10.00";
   birthPlace: any;
   emailAddress: any;
   mobile: any;
@@ -28,43 +27,39 @@ export class HomeComponent implements OnInit {
   questions: any;
 
   raasipl: boolean = true;
-  public plan={};
+  public plan: any = {};
 
-  constructor(private http: HttpClient,private atp: AmazingTimePickerService, private router: Router, public sign: commonService) {}
+  constructor(private http: HttpClient, private router: Router, public sign: commonService) { }
 
   open() {
-    const amazingTimePicker = this.atp.open();
-    amazingTimePicker.afterClose().subscribe(time => {
-      (<HTMLInputElement>document.getElementById('time')).value = time;
-    });
+    alert('Time Picker disabled in migration. Please enter time manually.');
   }
 
-  public signs;
+  public signs: any;
 
   ngOnInit() {
-    this.sign.getConfig('assets/monthlyhoroscope.json').subscribe(data => {
+    this.sign.getConfig('assets/monthlyhoroscope.json').subscribe((data: any) => {
       this.signs = data;
     });
   }
 
-  back(){
+  back() {
     this.raasipl = true;
   }
 
-  raasiplan(raasi){
+  raasiplan(raasi: any) {
     this.raasipl = false;
-    for(let sign of this.signs){
-      if(raasi === sign.image){
+    for (let sign of this.signs) {
+      if (raasi === sign.image) {
         this.plan = sign;
       }
     }
   }
 
   onSubmit() {
-
-    var forms = document.getElementsByClassName('needs-validation');
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
+    const forms = document.getElementsByClassName('needs-validation');
+    Array.from(forms).forEach((form: any) => {
+      form.addEventListener('submit', (event: any) => {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
@@ -73,7 +68,7 @@ export class HomeComponent implements OnInit {
       }, false);
     });
 
-    let data = {};
+    let data: any = {};
     data['name'] = this.name;
     data['gender'] = this.gender;
     data['birthDay'] = this.birthDay;
@@ -87,21 +82,21 @@ export class HomeComponent implements OnInit {
     data['questions'] = this.questions;
 
     const paymentData = {
-          purpose : 'Astro Payment',
-          amount: '500',
-          buyer_name: this.name,
-          email: this.emailAddress,
-          phone: this.mobile,
-          redirect_url : `https://emailserverapp.herokuapp.com/callback`,
-          webhook_url: '/webhook/',
-          userData : data
-    }
+      purpose: 'Astro Payment',
+      amount: '500',
+      buyer_name: this.name,
+      email: this.emailAddress,
+      phone: this.mobile,
+      redirect_url: `${environment.apiUrl}/callback`,
+      webhook_url: '/webhook/',
+      userData: data
+    };
 
-    if(data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']){
-      return this.http.post(`https://emailserverapp.herokuapp.com/pay?type=1`, paymentData, {}).subscribe((response) => {
+    if (data['name'] && data['gender'] && data['birthDay'] && data['birthPlace'] && data['emailAddress'] && data['mobile'] && data['maritialStatus']) {
+      this.http.post(`${environment.apiUrl}/pay?type=1`, paymentData, {}).subscribe((response) => {
         window.location.href = response.toString();
-      })
-    }else{
+      });
+    } else {
       alert("FILL ALL DETAILS");
     }
   }

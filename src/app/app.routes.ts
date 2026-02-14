@@ -1,0 +1,21 @@
+import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { NumerologyComponent } from './pages/numerology/numerology.component';
+import { MarriagematchComponent } from './pages/marriagematch/marriagematch.component';
+import { LuckynamesComponent } from './pages/luckynames/luckynames.component';
+import { MantrasComponent } from './pages/mantras/mantras.component';
+import { SuccessComponent } from './pages/success/success.component';
+import { FailureComponent } from './pages/failure/failure.component';
+
+export const routes: Routes = [
+    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
+    { path: 'aboutus', component: AboutusComponent },
+    { path: 'numerology', component: NumerologyComponent },
+    { path: 'marriagematch', component: MarriagematchComponent },
+    { path: 'luckynames', component: LuckynamesComponent },
+    { path: 'mantras', component: MantrasComponent },
+    { path: 'success', component: SuccessComponent },
+    { path: 'failure', component: FailureComponent }
+];

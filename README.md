@@ -1,52 +1,59 @@
-# Astrology Project
+# Astrology
 
-This is a comprehensive Astrology application consisting of an Angular 8 Frontend and a Node.js/Express Backend.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
 
-## Prerequisites
+## Development server
 
-Before you begin, ensure you have the following installed:
-
-*   **Node.js**: Recommended version 10.x or 12.x (due to Angular 8 and older dependencies).
-*   **Angular CLI**: Install globally via `npm install -g @angular/cli@8.x`.
-*   **MySQL**: A running MySQL server instance.
-
-## Project Structure
-
-*   `src/`: Angular Frontend source code.
-*   `Backend/`: Node.js Backend source code.
-*   `docs/`: Documentation.
-
-## Local Development Setup
-
-### 1. Database Setup
-
-1.  Create a MySQL database (e.g., `darshini_astrology`).
-2.  Import the project schema from `Backend/scripts/database.sql`.
-3.  Update the database connection settings in `Backend/mysql_conn.js`.
-    > **Note**: For security, it is best practice to use environment variables instead of hardcoding credentials.
-
-### 2. Backend Setup
-
-The backend runs on Node.js and handles emails and payment processing.
+To start a local development server, run:
 
 ```bash
-cd Backend
-npm install
-node email_app.js
-```
-The server will start on port `49153`.
-
-### 3. Frontend Setup
-
-The frontend is an Angular 8 application.
-
-```bash
-# From the root directory
-npm install
 ng serve
 ```
-Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Deployment
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-For detailed instructions on deploying this project to a cPanel environment, please read the [cPanel Deployment Guide](docs/CPANEL_DEPLOYMENT.md).
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

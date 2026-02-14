@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { commonService } from '../../common.service';
 
 @Component({
   selector: 'app-luckynames',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './luckynames.component.html',
   styleUrls: ['./luckynames.component.css']
 })
@@ -10,38 +13,38 @@ export class LuckynamesComponent implements OnInit {
 
   constructor(public luckyName: commonService) { }
 
-  public luckyNames;
+  public luckyNames: any;
   public isLoading = true;
   public alpha = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  public names;
+  public names: any;
 
-  luckynames(e){
-    e.target.innerHTML == "Girls"?this.names=this.luckyNames[1].girls:this.names=this.luckyNames[0].boys;
-    for(let i=0; i<document.getElementsByClassName('nav-link').length;i++){
+  luckynames(e: any) {
+    e.target.innerHTML == "Girls" ? this.names = this.luckyNames[1].girls : this.names = this.luckyNames[0].boys;
+    for (let i = 0; i < document.getElementsByClassName('nav-link').length; i++) {
       document.getElementsByClassName('nav-link')[i].classList.remove('active');
     }
-    for(let i=0; i<document.getElementsByClassName('sort').length;i++){
+    for (let i = 0; i < document.getElementsByClassName('sort').length; i++) {
       document.getElementsByClassName('sort')[i].classList.remove('active');
     }
     e.target.classList.add('active');
   }
 
-  sort(e){
+  sort(e: any) {
     let firstLetter = e.target.innerHTML;
     let sortNames = this.luckyNames;
-    let resultArr =[];
-    for(let i=0; i<document.getElementsByClassName('sort').length;i++){
+    let resultArr: any[] = [];
+    for (let i = 0; i < document.getElementsByClassName('sort').length; i++) {
       document.getElementsByClassName('sort')[i].classList.remove('active');
     }
-    document.querySelectorAll('.nav-link.active')[0].innerHTML === 'Boys'?resultArr = this.commonIterate(sortNames[0].boys, firstLetter, resultArr):resultArr = this.commonIterate(sortNames[1].girls, firstLetter, resultArr);
+    document.querySelectorAll('.nav-link.active')[0].innerHTML === 'Boys' ? resultArr = this.commonIterate(sortNames[0].boys, firstLetter, resultArr) : resultArr = this.commonIterate(sortNames[1].girls, firstLetter, resultArr);
     this.names = resultArr;
     e.target.classList.add('active');
   }
 
-  commonIterate(sortNames, firstLetter, resultArr){
+  commonIterate(sortNames: any, firstLetter: any, resultArr: any[]) {
     let m = 0;
-    for(let name in sortNames){
-      if(sortNames[name].name[0] == firstLetter.toLowerCase() || sortNames[name].name[0] == firstLetter.toUpperCase()){
+    for (let name in sortNames) {
+      if (sortNames[name].name[0] == firstLetter.toLowerCase() || sortNames[name].name[0] == firstLetter.toUpperCase()) {
         m++;
         sortNames[name].id = m;
         resultArr.push(sortNames[name]);
@@ -51,7 +54,7 @@ export class LuckynamesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.luckyName.getConfig('assets/luckynames.json').subscribe(data => {
+    this.luckyName.getConfig('assets/luckynames.json').subscribe((data: any) => {
       this.luckyNames = data;
       this.names = this.luckyNames[0].boys;
       this.isLoading = false;

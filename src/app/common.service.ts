@@ -8,8 +8,8 @@ export class commonService {
 
   constructor(private http: HttpClient) { }
 
-  getConfig(luckyNames) {
-    return this.http.get(luckyNames);
+  getConfig(url: string) {
+    return this.http.get(url);
   }
 
 }

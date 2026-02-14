@@ -1,27 +1,27 @@
 {
-  "name": "emailsending",
-  "version": "0.0.1",
-  "description": "EmailSending Server",
-  "main": "email_app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node email_app.js"
-  },
-  "keywords": [
-    "EmailSending",
-    "Server"
-  ],
-  "author": "Nafri - JONAF TECH",
-  "license": "ISC",
-  "dependencies": {
-    "bluebird": "3.5.5",
-    "body-parser": "1.19.0",
-    "cors": "2.8.5",
-    "cryptr": "4.0.2",
-    "express": "4.17.1",
-    "instamojo-nodejs": "0.0.5",
-    "nodemailer": "6.3.0",
-    "promise-mysql": "3.0.2",
-    "url": "0.11.0"
-  }
+    "name": "emailsending",
+    "version": "0.0.1",
+    "description": "EmailSending Server",
+    "main": "email_app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node email_app.js"
+    },
+    "keywords": [
+        "EmailSending",
+        "Server"
+    ],
+    "author": "Nafri - JONAF TECH",
+    "license": "ISC",
+    "dependencies": {
+        "bluebird": "3.5.5",
+        "body-parser": "1.19.0",
+        "cors": "2.8.5",
+        "cryptr": "4.0.2",
+        "express": "4.17.1",
+        "instamojo-nodejs": "0.0.5",
+        "nodemailer": "6.3.0",
+        "promise-mysql": "3.0.2",
+        "url": "0.11.0"
+    }
 }

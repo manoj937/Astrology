@@ -11,15 +11,15 @@ var db = require('./mysql_conn');
 var Promise = require("bluebird");
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-with, Content-Type, Accept");
-  next();
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-with, Content-Type, Accept");
+    next();
 })
 
 app.use(cors());
 
 app.use(bodyParser.urlencoded({
-  extended: true
+    extended: true
 }));
 app.use(bodyParser.json());
 
@@ -28,213 +28,213 @@ const port = process.env.PORT || 49153;
 
 
 app.get('/test', function (req, res) {
-  res.json({
-    "status": "OK"
-  })
+    res.json({
+        "status": "OK"
+    })
 });
 
 
 app.post('/pay', function (req, res) {
-  let request_type = req.query.type;
-  Insta.setKeys('12b5747f2dd34ba392d77e83bed87328', '9124912abddb41180b8ec7917174301c');
-  let user_id = '';
+    let request_type = req.query.type;
+    Insta.setKeys('12b5747f2dd34ba392d77e83bed87328', '9124912abddb41180b8ec7917174301c');
+    let user_id = '';
 
-  const data = new Insta.PaymentData();
+    const data = new Insta.PaymentData();
 
-  Promise.using(db(), function (connection) {
-    let lastIdQuery = '';
-    let insertQuery = '';
-    if (request_type === '1') {
-      lastIdQuery = `select id from userDetails order by id desc limit 1`;
-      insertQuery = `INSERT INTO userDetails (name, gender, dob, birthplace, birthstar, birthtime, mobile, email, rashi, maritialstatus, otherques, createdon) 
-						   VALUES ('${req.body.userData.name}','${req.body.userData.gender}','${req.body.userData.birthDay}','${req.body.userData.birthPlace}','${req.body.userData.birthStar}',
-							'${req.body.userData.birthTime}','${req.body.userData.mobile}','${req.body.userData.emailAddress}','${req.body.userData.rashi}','${req.body.userData.maritialStatus}','${req.body.userData.questions}'
+    Promise.using(db(), function (connection) {
+        let lastIdQuery = '';
+        let insertQuery = '';
+        if (request_type === '1') {
+            lastIdQuery = `select id from userDetails order by id desc limit 1`;
+            insertQuery = `INSERT INTO userDetails (name, gender, dob, birthplace, birthstar, birthtime, mobile, email, rashi, maritialstatus, otherques, createdon) 
+					   VALUES ('${req.body.userData.name}','${req.body.userData.gender}','${req.body.userData.birthDay}','${req.body.userData.birthPlace}','${req.body.userData.birthStar}',
+						'${req.body.userData.birthTime}','${req.body.userData.mobile}','${req.body.userData.emailAddress}','${req.body.userData.rashi}','${req.body.userData.maritialStatus}','${req.body.userData.questions}'
               ,'${Date.now()}')`;
-    } else if (request_type === '2') {
-      lastIdQuery = `select id from marriage_match order by id desc limit 1`;
-      insertQuery = `INSERT INTO marriage_match (m_name, m_dob, m_time, m_birth_place, m_birth_star, m_rashi, f_name, f_dob, f_time, f_birth_place, f_birth_star, f_rashi, email, mobile, createdon) 
+        } else if (request_type === '2') {
+            lastIdQuery = `select id from marriage_match order by id desc limit 1`;
+            insertQuery = `INSERT INTO marriage_match (m_name, m_dob, m_time, m_birth_place, m_birth_star, m_rashi, f_name, f_dob, f_time, f_birth_place, f_birth_star, f_rashi, email, mobile, createdon) 
       VALUES ('${req.body.userData.bname}','${req.body.userData.bbirthDay}','${req.body.userData.bbirthTime}','${req.body.userData.bbirthPlace}','${req.body.userData.bbirthStar}',
               '${req.body.userData.brashi}','${req.body.userData.gname}','${req.body.userData.gbirthDay}','${req.body.userData.gbirthTime}','${req.body.userData.gbirthPlace}',
               '${req.body.userData.gbirthStar}','${req.body.userData.grashi}','${req.body.userData.emailAddress}','${req.body.userData.mobile}','${Date.now()}');`;
-    }
-    connection.query(insertQuery).then((insertResp) => {
-      connection.query(lastIdQuery).then((resp) => {
-        user_id = resp[0]['id'];
-        data.purpose = req.body.purpose;
-        data.amount = req.body.amount;
-        data.buyer_name = req.body.buyer_name;
-        data.redirect_url = `${req.body.redirect_url}?user_id=${user_id}`;
-        data.email = req.body.email;
-        data.phone = req.body.phone;
-        data.send_email = true;
-        data.webhook = 'http://www.example.com/webhook';
-        data.send_sms = false;
-        data.allow_repeated_payments = false;
+        }
+        connection.query(insertQuery).then((insertResp) => {
+            connection.query(lastIdQuery).then((resp) => {
+                user_id = resp[0]['id'];
+                data.purpose = req.body.purpose;
+                data.amount = req.body.amount;
+                data.buyer_name = req.body.buyer_name;
+                data.redirect_url = `${req.body.redirect_url}?user_id=${user_id}`;
+                data.email = req.body.email;
+                data.phone = req.body.phone;
+                data.send_email = true;
+                data.webhook = 'http://www.example.com/webhook';
+                data.send_sms = false;
+                data.allow_repeated_payments = false;
 
-        Insta.createPayment(data, function (error, response) {
-          if (error) {
-            // some error
-          } else {
-            // Payment redirection link at response.payment_request.longurl
-            console.log(response);
-            const responseData = JSON.parse(response);
-            const redirectUrl = responseData.payment_request.longurl;
+                Insta.createPayment(data, function (error, response) {
+                    if (error) {
+                        // some error
+                    } else {
+                        // Payment redirection link at response.payment_request.longurl
+                        console.log(response);
+                        const responseData = JSON.parse(response);
+                        const redirectUrl = responseData.payment_request.longurl;
 
-            res.status(200).json(redirectUrl)
-          }
-        });
-      }).catch(err => {
-        console.log("Query Error", err)
-      })
+                        res.status(200).json(redirectUrl)
+                    }
+                });
+            }).catch(err => {
+                console.log("Query Error", err)
+            })
+        }).catch(err => {
+            console.log("Connection Error", err)
+        })
     }).catch(err => {
-      console.log("Connection Error", err)
+        console.log("Connection Error 1", err)
     })
-  }).catch(err => {
-    console.log("Connection Error 1", err)
-  })
 
 
 })
 
 app.get('/callback', function (req, res) {
-  let url_parts = url.parse(req.url, true);
+    let url_parts = url.parse(req.url, true);
 
-  responseData = url_parts.query;
+    responseData = url_parts.query;
 
-  if (responseData.payment_id) {
-    let payment_id = responseData.payment_id;
-    let payment_status = responseData.payment_status;
-    let user_id = responseData.user_id;
+    if (responseData.payment_id) {
+        let payment_id = responseData.payment_id;
+        let payment_status = responseData.payment_status;
+        let user_id = responseData.user_id;
 
-    if (payment_status === 'Credit') {
-      Promise.using(db(), function (connection) {
-        let userDataQuery = `select * from userDetails where id = ${user_id}`;
-        connection.query(userDataQuery).then((selectedData) => {
-          emailSending(selectedData[0], 1).then(() => {
-            emailSending(selectedData[0], 2).then(() => {
-              return res.redirect("https://predicthoroscope.com/success");
-            }).catch(err => {
-              console.log("errorrr....", err);
-              return res.redirect("https://predicthoroscope.com/failure");
-            })
-          })
-        }).catch(err => {
-          console.log("call back error....", err)
-        })
-      });
-    } else {
-      console.log("Payment Failed");
-      return res.redirect("https://predicthoroscope.com/failure");
+        if (payment_status === 'Credit') {
+            Promise.using(db(), function (connection) {
+                let userDataQuery = `select * from userDetails where id = ${user_id}`;
+                connection.query(userDataQuery).then((selectedData) => {
+                    emailSending(selectedData[0], 1).then(() => {
+                        emailSending(selectedData[0], 2).then(() => {
+                            return res.redirect("https://predicthoroscope.com/success");
+                        }).catch(err => {
+                            console.log("errorrr....", err);
+                            return res.redirect("https://predicthoroscope.com/failure");
+                        })
+                    })
+                }).catch(err => {
+                    console.log("call back error....", err)
+                })
+            });
+        } else {
+            console.log("Payment Failed");
+            return res.redirect("https://predicthoroscope.com/failure");
+        }
+
     }
-
-  }
 })
 
 app.get('/marriage_match_callback', function (req, res) {
-  let url_parts = url.parse(req.url, true);
+    let url_parts = url.parse(req.url, true);
 
-  responseData = url_parts.query;
+    responseData = url_parts.query;
 
-  if (responseData.payment_id) {
-    let payment_id = responseData.payment_id;
-    let payment_status = responseData.payment_status;
-    let user_id = responseData.user_id;
+    if (responseData.payment_id) {
+        let payment_id = responseData.payment_id;
+        let payment_status = responseData.payment_status;
+        let user_id = responseData.user_id;
 
-    if (payment_status === 'Credit') {
-      Promise.using(db(), function (connection) {
-        let userDataQuery = `select * from marriage_match where id = ${user_id}`;
-        connection.query(userDataQuery).then((selectedData) => {
-          emailSending(selectedData[0], 3).then(() => {
-            emailSending(selectedData[0], 2).then(() => {
-              return res.redirect("https://predicthoroscope.com/success");
-            }).catch(err => {
-              console.log("marriage_match_callback errorrr....", err);
-              return res.redirect("https://predicthoroscope.com/failure");
-            })
-          })
-        }).catch(err => {
-          console.log("marriage_match_callback error....", err)
-        })
-      });
-    } else {
-      console.log("marriage_match_callback Payment Failed");
-      return res.redirect("https://predicthoroscope.com/failure");
+        if (payment_status === 'Credit') {
+            Promise.using(db(), function (connection) {
+                let userDataQuery = `select * from marriage_match where id = ${user_id}`;
+                connection.query(userDataQuery).then((selectedData) => {
+                    emailSending(selectedData[0], 3).then(() => {
+                        emailSending(selectedData[0], 2).then(() => {
+                            return res.redirect("https://predicthoroscope.com/success");
+                        }).catch(err => {
+                            console.log("marriage_match_callback errorrr....", err);
+                            return res.redirect("https://predicthoroscope.com/failure");
+                        })
+                    })
+                }).catch(err => {
+                    console.log("marriage_match_callback error....", err)
+                })
+            });
+        } else {
+            console.log("marriage_match_callback Payment Failed");
+            return res.redirect("https://predicthoroscope.com/failure");
+        }
+
     }
-
-  }
 })
 
 function emailSending(message, emailDecider) {
-  return new Promise(function (resolve, reject) {
-    let name;
-    let gender;
-    let birthday;
-    let birthTime;
-    let birthPlace;
-    let birthStar;
-    let emailAddress;
-    let mobile;
-    let rashi;
-    let maritialStatus;
-    let questions;
+    return new Promise(function (resolve, reject) {
+        let name;
+        let gender;
+        let birthday;
+        let birthTime;
+        let birthPlace;
+        let birthStar;
+        let emailAddress;
+        let mobile;
+        let rashi;
+        let maritialStatus;
+        let questions;
 
-    let bride_name;
-    let bride_birthPlace;
-    let bride_birthTime;
-    let bride_birthday;
-    let bride_birthStar;
-    let bride_rashi;
+        let bride_name;
+        let bride_birthPlace;
+        let bride_birthTime;
+        let bride_birthday;
+        let bride_birthStar;
+        let bride_rashi;
 
-    let groom_name;
-    let groom_birthPlace;
-    let groom_birthTime;
-    let groom_birthday;
-    let groom_birthStar;
-    let groom_rashi;
+        let groom_name;
+        let groom_birthPlace;
+        let groom_birthTime;
+        let groom_birthday;
+        let groom_birthStar;
+        let groom_rashi;
 
-    if (emailDecider === 1) {
-      name = message['name'];
-      gender = message['gender'];
-      birthday = message['dob'];
-      birthTime = message['birthtime'];
-      birthPlace = message['birthplace'];
-      birthStar = message['birthstar'];
-      emailAddress = message['email'];
-      mobile = message['mobile'];
-      rashi = message['rashi'];
-      maritialStatus = message['maritialstatus'];
-      questions = message['otherques'];
-    } else if (emailDecider === 3) {
-      bride_name = message['f_name'];
-      bride_birthPlace = message['f_birth_place'];
-      bride_birthTime = message['f_time'];
-      bride_birthday = message['f_dob'];
-      bride_birthStar = message['f_birth_star'];
-      bride_rashi = message['f_rashi'];
+        if (emailDecider === 1) {
+            name = message['name'];
+            gender = message['gender'];
+            birthday = message['dob'];
+            birthTime = message['birthtime'];
+            birthPlace = message['birthplace'];
+            birthStar = message['birthstar'];
+            emailAddress = message['email'];
+            mobile = message['mobile'];
+            rashi = message['rashi'];
+            maritialStatus = message['maritialstatus'];
+            questions = message['otherques'];
+        } else if (emailDecider === 3) {
+            bride_name = message['f_name'];
+            bride_birthPlace = message['f_birth_place'];
+            bride_birthTime = message['f_time'];
+            bride_birthday = message['f_dob'];
+            bride_birthStar = message['f_birth_star'];
+            bride_rashi = message['f_rashi'];
 
-      groom_name = message['m_name'];
-      groom_birthPlace = message['m_birth_place'];
-      groom_birthTime = message['m_time'];
-      groom_birthday = message['m_dob'];
-      groom_birthStar = message['m_birth_star'];
-      groom_rashi = message['m_rashi'];
-    }
+            groom_name = message['m_name'];
+            groom_birthPlace = message['m_birth_place'];
+            groom_birthTime = message['m_time'];
+            groom_birthday = message['m_dob'];
+            groom_birthStar = message['m_birth_star'];
+            groom_rashi = message['m_rashi'];
+        }
 
-    const transporter = nodemailer.createTransport({
-      host: 'server190.iseencloud.com',
-      port: 465,
-      secure: true,
-      auth: {
-        user: 'info@predicthoroscope.com', //// need to change client email
-        pass: cryptr.decrypt('f2d50800a6ddf3b2e1121273f830dac5eccd6908540974acced138fc31') // need to change client password
-      }
-    });
-    if (emailDecider === 1) {
-      var mailOptions = {
-        from: 'Darshini Astrology<info@predicthoroscope.com>', // need to change client email
-        to: "predicthoroscope@gmail.com", //// need to change client email
-        subject: "New Astro Request",
-        html: `
+        const transporter = nodemailer.createTransport({
+            host: 'server190.iseencloud.com',
+            port: 465,
+            secure: true,
+            auth: {
+                user: 'info@predicthoroscope.com',
+                pass: cryptr.decrypt('f2d50800a6ddf3b2e1121273f830dac5eccd6908540974acced138fc31')
+            }
+        });
+        if (emailDecider === 1) {
+            var mailOptions = {
+                from: 'Darshini Astrology<info@predicthoroscope.com>',
+                to: "predicthoroscope@gmail.com",
+                subject: "New Astro Request",
+                html: `
 			
 		<html>
 		<head>
@@ -347,25 +347,25 @@ function emailSending(message, emailDecider) {
 		
 			`
 
-      };
-    } else if (emailDecider === 2) {
-      var mailOptions = {
-        from: 'Darshini Astrology<info@predicthoroscope.com>', // need to change client email
-        to: emailAddress, //// need to change client email
-        subject: "Payment Confirmation",
-        text: `Dear Sir / Madam,
+            };
+        } else if (emailDecider === 2) {
+            var mailOptions = {
+                from: 'Darshini Astrology<info@predicthoroscope.com>',
+                to: emailAddress,
+                subject: "Payment Confirmation",
+                text: `Dear Sir / Madam,
 						Your payment has been succesfully done.We will share your horoscope detail shortly.
 
 
 					With Regards,
 					Darshini Astrology`
-      }
-    } else if (emailDecider === 3) {
-      var mailOptions = {
-        from: 'Darshini Astrology<info@predicthoroscope.com>', // need to change client email
-        to: "predicthoroscope@gmail.com", //// need to change client email
-        subject: "New Marriage Matching Request",
-        html: `
+            }
+        } else if (emailDecider === 3) {
+            var mailOptions = {
+                from: 'Darshini Astrology<info@predicthoroscope.com>',
+                to: "predicthoroscope@gmail.com",
+                subject: "New Marriage Matching Request",
+                html: `
 			
 		<html>
 		<head>
@@ -487,21 +487,21 @@ function emailSending(message, emailDecider) {
 		
 			`
 
-      };
-    }
+            };
+        }
 
 
-    transporter.sendMail(mailOptions, function (error) {
-      if (error) {
-        console.log(error);
-        reject();
-        console.log('Email not sent.');
-      } else {
-        resolve();
-        console.log('Email sent Successfully.');
-      }
-    });
-  })
+        transporter.sendMail(mailOptions, function (error) {
+            if (error) {
+                console.log(error);
+                reject();
+                console.log('Email not sent.');
+            } else {
+                resolve();
+                console.log('Email sent Successfully.');
+            }
+        });
+    })
 }
 
 // launch ======================================================================
