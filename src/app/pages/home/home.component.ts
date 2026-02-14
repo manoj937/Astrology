@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   name: any;
   gender: any;
   birthDay: any;
-  birthTime: any = "10.00";
+  birthTime: any = "10:00";
   birthPlace: any;
   emailAddress: any;
   mobile: any;
@@ -30,10 +30,6 @@ export class HomeComponent implements OnInit {
   public plan: any = {};
 
   constructor(private http: HttpClient, private router: Router, public sign: commonService) { }
-
-  open() {
-    alert('Time Picker disabled in migration. Please enter time manually.');
-  }
 
   public signs: any;
 

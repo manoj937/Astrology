@@ -1,7 +1,9 @@
 <div class="container">
     <div class="card" style="margin-bottom: 20px">
-        <div class="card-body" style="align-items: center;min-height: calc( 100vh - 185px);flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px">
-            <div style="margin-bottom: 15px;position: relative;display: flex; justify-content: center; width: 100%;height: 155px;" >
+        <div class="card-body"
+            style="align-items: center;min-height: calc( 100vh - 185px);flex-direction:column;display: flex;line-height: 30px;letter-spacing: 0.5px;padding: 20px 50px">
+            <div
+                style="margin-bottom: 15px;position: relative;display: flex; justify-content: center; width: 100%;height: 155px;">
                 <h2 style="font-size: 16px;font-weight: bold;">மணப்பொருத்தம்</h2>
                 <img src="assets/twed.png">
             </div>
@@ -13,16 +15,20 @@
                             <div class="form-group" style="position: relative;">
                                 <label for="rashi">ராசி</label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
-                                <select id="rashi" class="custom-select" (change)="brideDetails($event)" [(ngModel)]="brashi" [ngModelOptions]="{standalone: true}">
+                                <span class="badge badge-pill badge-primary" (click)="reset()"
+                                    style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="rashi" class="custom-select" (change)="brideDetails($event)"
+                                    [(ngModel)]="brashi" [ngModelOptions]="{standalone: true}">
                                     <option *ngFor="let raashi of brideraashi" value="{{raashi}}">{{raashi}}</option>
                                 </select>
                             </div>
                             <div class="form-group" style="position: relative;">
                                 <label for="nakshatram">நட்சத்திரம்</label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
-                                <select id="nakshatram" class="custom-select" (change)="brideDetails($event)" [(ngModel)]="bbirthStar" [ngModelOptions]="{standalone: true}">
+                                <span class="badge badge-pill badge-primary" (click)="reset()"
+                                    style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="nakshatram" class="custom-select" (change)="brideDetails($event)"
+                                    [(ngModel)]="bbirthStar" [ngModelOptions]="{standalone: true}">
                                     <option *ngFor="let bride of bridestar" value="{{bride}}">{{bride}}</option>
                                 </select>
                             </div>
@@ -36,16 +42,20 @@
                             <div class="form-group" style="position: relative;">
                                 <label for="mrashi">ராசி</label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
-                                <select id="mrashi" class="custom-select" (change)="groomDetails($event)" [(ngModel)]="grashi" [ngModelOptions]="{standalone: true}">
+                                <span class="badge badge-pill badge-primary" (click)="reset()"
+                                    style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="mrashi" class="custom-select" (change)="groomDetails($event)"
+                                    [(ngModel)]="grashi" [ngModelOptions]="{standalone: true}">
                                     <option *ngFor="let groom of groomraashi" value="{{groom}}">{{groom}}</option>
                                 </select>
                             </div>
                             <div class="form-group" style="position: relative;">
                                 <label for="mnakshatram">நட்சத்திரம்</label>
                                 <span style="color: red;margin-left: 5px">*</span>
-                                <span class="badge badge-pill badge-primary" (click)="reset()" style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
-                                <select id="mnakshatram" class="custom-select" (change)="groomDetails($event)" [(ngModel)]="gbirthStar" [ngModelOptions]="{standalone: true}">
+                                <span class="badge badge-pill badge-primary" (click)="reset()"
+                                    style="cursor:pointer;position: absolute;right:10px;top:5px;">All</span>
+                                <select id="mnakshatram" class="custom-select" (change)="groomDetails($event)"
+                                    [(ngModel)]="gbirthStar" [ngModelOptions]="{standalone: true}">
                                     <option *ngFor="let groom of groomstar" value="{{groom}}">{{groom}}</option>
                                 </select>
                             </div>
@@ -53,10 +63,12 @@
                     </div>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px;">
-                    <button style="font-size: 18px" type="button" class="btn btn-primary" (click)="result()">Result</button>
+                    <button style="font-size: 18px" type="button" class="btn btn-primary"
+                        (click)="result()">Result</button>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <form class="matches" style="width: 100%; display: flex;justify-content: space-around;padding: 10px;flex-wrap: wrap">
+                    <form class="matches"
+                        style="width: 100%; display: flex;justify-content: space-around;padding: 10px;flex-wrap: wrap">
                         <div *ngFor="let switchButton of matchresults" class="switchStyle custom-control custom-switch">
                             <input type="checkbox" class="custom-control-input switchbtn" id="{{switchButton}}">
                             <label class="custom-control-label" for="{{switchButton}}">{{switchButton}}</label>
@@ -64,79 +76,96 @@
                     </form>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <span class="badge badge-pill badge-primary" style="padding: 10px">மொத்த பொருத்தங்கள் {{match}}/10</span>
+                    <span class="badge badge-pill badge-primary" style="padding: 10px">மொத்த பொருத்தங்கள்
+                        {{match}}/10</span>
                 </div>
                 <div style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <span class="badge badge-pill {{successClass}}" style="padding: 10px;margin-left: 15px">மிக நன்று</span>
+                    <span class="badge badge-pill {{successClass}}" style="padding: 10px;margin-left: 15px">மிக
+                        நன்று</span>
                     <span class="badge badge-pill {{warnClass}}" style="padding: 10px;margin-left: 15px">நன்று</span>
-                    <span class="badge badge-pill {{dangerClass}}" style="padding: 10px;margin-left: 15px">பொருத்தம் இல்லை</span>
+                    <span class="badge badge-pill {{dangerClass}}" style="padding: 10px;margin-left: 15px">பொருத்தம்
+                        இல்லை</span>
                 </div>
                 <div style="width: 100%;margin-top:20px">
-                    <div>நட்சத்திர பொருத்தங்கள் ஓர் அடிப்படை பொருத்தமே, இதுபோக திசா சந்திப்பு, சுத்த, அசுத்த ஜாதகங்கள் தோஷங்கள் போன்றவைகளின் ஆராய்வு மிக அவசியம்.</div> 
-                    <div>இதனை அறிந்துகொண்டு துல்லியமான பலன்களை பெற கீழ் உள்ள விவரங்களை பூர்த்தி செய்து payment பட்டனை அழுத்தவும்</div>
+                    <div>நட்சத்திர பொருத்தங்கள் ஓர் அடிப்படை பொருத்தமே, இதுபோக திசா சந்திப்பு, சுத்த, அசுத்த ஜாதகங்கள்
+                        தோஷங்கள் போன்றவைகளின் ஆராய்வு மிக அவசியம்.</div>
+                    <div>இதனை அறிந்துகொண்டு துல்லியமான பலன்களை பெற கீழ் உள்ள விவரங்களை பூர்த்தி செய்து payment பட்டனை
+                        அழுத்தவும்</div>
                 </div>
                 <div class="det">
                     <div class="detsub1">
                         <div class="form-group">
                             <label for="name">பெயர் </label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input id="name" class="form-control" placeholder="பெயர்" type="text" [(ngModel)]="bname" [ngModelOptions]="{standalone: true}">
+                            <input id="name" class="form-control" placeholder="பெயர்" type="text" [(ngModel)]="bname"
+                                [ngModelOptions]="{standalone: true}">
                         </div>
                         <div class="form-group">
                             <label>பிறந்த தேதி</label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input class="form-control" type="date" [(ngModel)]="bbirthDay" [ngModelOptions]="{standalone: true}">
+                            <input class="form-control" type="date" [(ngModel)]="bbirthDay"
+                                [ngModelOptions]="{standalone: true}">
                         </div>
                         <div class="form-group">
                             <label>நேரம்</label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input id="time" class="form-control" (click)="open($event)" [(ngModel)]="bbirthTime" [ngModelOptions]="{standalone: true}">
+                            <input id="time" class="form-control" type="time" [(ngModel)]="bbirthTime"
+                                [ngModelOptions]="{standalone: true}" placeholder="Select Birth Time">
                         </div>
                         <div class="form-group">
                             <label for="place">பிறந்த ஊர்</label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input id="place" class="form-control" placeholder="பிறந்த ஊர்" type="text" [(ngModel)]="bbirthPlace" [ngModelOptions]="{standalone: true}">
+                            <input id="place" class="form-control" placeholder="பிறந்த ஊர்" type="text"
+                                [(ngModel)]="bbirthPlace" [ngModelOptions]="{standalone: true}">
                         </div>
                     </div>
                     <div class="detsub2">
                         <div class="form-group">
                             <label for="mname">பெயர் </label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input id="mname" class="form-control" placeholder="பெயர்" type="text" [(ngModel)]="gname" [ngModelOptions]="{standalone: true}">
+                            <input id="mname" class="form-control" placeholder="பெயர்" type="text" [(ngModel)]="gname"
+                                [ngModelOptions]="{standalone: true}">
                         </div>
                         <div class="form-group">
                             <label>பிறந்த தேதி</label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input class="form-control" type="date" [(ngModel)]="gbirthDay" [ngModelOptions]="{standalone: true}">
+                            <input class="form-control" type="date" [(ngModel)]="gbirthDay"
+                                [ngModelOptions]="{standalone: true}">
                         </div>
                         <div class="form-group">
                             <label>நேரம்</label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input id="mtime" class="form-control" (click)="open($event)" [(ngModel)]="gbirthTime" [ngModelOptions]="{standalone: true}">
+                            <input id="mtime" class="form-control" type="time" [(ngModel)]="gbirthTime"
+                                [ngModelOptions]="{standalone: true}" placeholder="Select Birth Time">
                         </div>
                         <div class="form-group">
                             <label for="mplace">பிறந்த ஊர்</label>
                             <span style="color: red;margin-left: 5px">*</span>
-                            <input id="mplace" class="form-control" placeholder="பிறந்த ஊர்" type="text" [(ngModel)]="gbirthPlace" [ngModelOptions]="{standalone: true}">
+                            <input id="mplace" class="form-control" placeholder="பிறந்த ஊர்" type="text"
+                                [(ngModel)]="gbirthPlace" [ngModelOptions]="{standalone: true}">
                         </div>
                     </div>
                 </div>
                 <div style="width: 100%;margin-top:20px; display: flex;justify-content: center;">
-                    <div class="form-group mr-3" >
+                    <div class="form-group mr-3">
                         <label for="email">Email address</label>
                         <span style="color: red;margin-left: 5px">*</span>
-                        <input class="form-control" id="email" placeholder="name@example.com" type="email" [(ngModel)]="emailAddress" [ngModelOptions]="{standalone: true}">
+                        <input class="form-control" id="email" placeholder="name@example.com" type="email"
+                            [(ngModel)]="emailAddress" [ngModelOptions]="{standalone: true}">
                     </div>
                     <div class="form-group ml-3">
                         <label for="mobile">Mobile Number</label>
                         <span style="color: red;margin-left: 5px">*</span>
-                        <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text" [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}">
+                        <input id="mobile" class="form-control" placeholder="Enter Mobile Number" type="text"
+                            [(ngModel)]="mobile" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
-                <div class="form-group d-flex buttonpay" style="width: 100%;display: flex;justify-content: center;margin-top:20px">
-                    <button type="button" class="btn btn-primary" data-toggle="button" (click)="submit()">Pay Rs.500</button>
-                </div> 
+                <div class="form-group d-flex buttonpay"
+                    style="width: 100%;display: flex;justify-content: center;margin-top:20px">
+                    <button type="button" class="btn btn-primary" data-toggle="button" (click)="submit()">Pay
+                        Rs.500</button>
+                </div>
             </div>
         </div>
     </div>
-</div>    
+</div>
