@@ -16,11 +16,11 @@ This guide provides step-by-step instructions for deploying the Astrology projec
 1.  **Log in to cPanel**.
 2.  Go to **Databases** > **MySQL Databases**.
 3.  **Create a New Database**:
-    *   Enter a name (e.g., `username_astrology`).
+    *   Enter a name (e.g., `astrodharsan_astrology`).
     *   Click **Create Database**.
 4.  **Create a User**:
     *   Scroll down to "MySQL Users".
-    *   Enter a username (e.g., `username_astro_user`).
+    *   Enter a username (e.g., `astrodharsan_admin`).
     *   Enter a strong password. **Important:** Note this password down.
     *   Click **Create User**.
 5.  **Add User to Database**:
@@ -55,9 +55,9 @@ The backend is located in the `Backend` folder.
 **Option A: Quick Fix (Not Recommended for Production)**
 1.  Edit `mysql_conn.js` in File Manager.
 2.  Update `host`, `user`, `password`, and `database` with your cPanel database details.
-    *   `host`: Usually `localhost`.
-    *   `user`: `username_astro_user` (from Part 1).
-    *   `database`: `username_astrology` (from Part 1).
+    *   `host`: \`23.94.181.5\`
+    *   `user`: \`astrodharsan_admin\`
+    *   `database`: \`astrodharsan_astrology\`
 
 **Option B: Environment Variables (Secure)**
 1.  Modify your code to use `process.env.DB_USER`, `process.env.DB_PASS`, etc.

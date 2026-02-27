@@ -1,8 +1,8 @@
 -- Database Schema for Astrology Project
 -- Inferred from Backend/email_app.js
 
-CREATE DATABASE IF NOT EXISTS `nagoreto_darshini_astrology`;
-USE `nagoreto_darshini_astrology`;
+CREATE DATABASE IF NOT EXISTS `astrodharsan_astrology`;
+USE `astrodharsan_astrology`;
 
 -- Table structure for table `userDetails`
 DROP TABLE IF EXISTS `userDetails`;

@@ -112,10 +112,10 @@ app.get('/callback', function (req, res) {
         connection.query(userDataQuery).then((selectedData) => {
           emailSending(selectedData[0], 1).then(() => {
             emailSending(selectedData[0], 2).then(() => {
-              return res.redirect("https://predicthoroscope.com/success");
+              return res.redirect("https://astrodharsan.in/success");
             }).catch(err => {
               console.log("errorrr....", err);
-              return res.redirect("https://predicthoroscope.com/failure");
+              return res.redirect("https://astrodharsan.in/failure");
             })
           })
         }).catch(err => {
@@ -124,7 +124,7 @@ app.get('/callback', function (req, res) {
       });
     } else {
       console.log("Payment Failed");
-      return res.redirect("https://predicthoroscope.com/failure");
+      return res.redirect("https://astrodharsan.in/failure");
     }
 
   }
@@ -146,10 +146,10 @@ app.get('/marriage_match_callback', function (req, res) {
         connection.query(userDataQuery).then((selectedData) => {
           emailSending(selectedData[0], 3).then(() => {
             emailSending(selectedData[0], 2).then(() => {
-              return res.redirect("https://predicthoroscope.com/success");
+              return res.redirect("https://astrodharsan.in/success");
             }).catch(err => {
               console.log("marriage_match_callback errorrr....", err);
-              return res.redirect("https://predicthoroscope.com/failure");
+              return res.redirect("https://astrodharsan.in/failure");
             })
           })
         }).catch(err => {
@@ -158,7 +158,7 @@ app.get('/marriage_match_callback', function (req, res) {
       });
     } else {
       console.log("marriage_match_callback Payment Failed");
-      return res.redirect("https://predicthoroscope.com/failure");
+      return res.redirect("https://astrodharsan.in/failure");
     }
 
   }
@@ -225,13 +225,13 @@ function emailSending(message, emailDecider) {
       port: 465,
       secure: true,
       auth: {
-        user: 'info@predicthoroscope.com', //// need to change client email
+        user: 'info@astrodharsan.in', //// need to change client email
         pass: cryptr.decrypt('f2d50800a6ddf3b2e1121273f830dac5eccd6908540974acced138fc31') // need to change client password
       }
     });
     if (emailDecider === 1) {
       var mailOptions = {
-        from: 'Darshini Astrology<info@predicthoroscope.com>', // need to change client email
+        from: 'Darshini Astrology<info@astrodharsan.in>', // need to change client email
         to: "predicthoroscope@gmail.com", //// need to change client email
         subject: "New Astro Request",
         html: `
@@ -350,7 +350,7 @@ function emailSending(message, emailDecider) {
       };
     } else if (emailDecider === 2) {
       var mailOptions = {
-        from: 'Darshini Astrology<info@predicthoroscope.com>', // need to change client email
+        from: 'Darshini Astrology<info@astrodharsan.in>', // need to change client email
         to: emailAddress, //// need to change client email
         subject: "Payment Confirmation",
         text: `Dear Sir / Madam,
@@ -362,7 +362,7 @@ function emailSending(message, emailDecider) {
       }
     } else if (emailDecider === 3) {
       var mailOptions = {
-        from: 'Darshini Astrology<info@predicthoroscope.com>', // need to change client email
+        from: 'Darshini Astrology<info@astrodharsan.in>', // need to change client email
         to: "predicthoroscope@gmail.com", //// need to change client email
         subject: "New Marriage Matching Request",
         html: `
